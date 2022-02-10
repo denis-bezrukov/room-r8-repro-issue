@@ -1,0 +1,2098 @@
+androidx.annotation.AnimRes
+androidx.annotation.AnimatorRes
+androidx.annotation.AnyRes
+androidx.annotation.AnyThread
+androidx.annotation.ArrayRes
+androidx.annotation.AttrRes
+androidx.annotation.BinderThread
+androidx.annotation.BoolRes
+androidx.annotation.CallSuper
+androidx.annotation.CheckResult
+androidx.annotation.ColorInt
+androidx.annotation.ColorLong
+androidx.annotation.ColorRes
+androidx.annotation.ContentView
+androidx.annotation.DimenRes
+androidx.annotation.Dimension
+androidx.annotation.DrawableRes
+androidx.annotation.FloatRange
+androidx.annotation.FontRes
+androidx.annotation.FractionRes
+androidx.annotation.GuardedBy
+androidx.annotation.HalfFloat
+androidx.annotation.IdRes
+androidx.annotation.InspectableProperty$EnumEntry
+androidx.annotation.InspectableProperty$FlagEntry
+androidx.annotation.InspectableProperty$ValueType
+androidx.annotation.InspectableProperty
+androidx.annotation.IntDef
+androidx.annotation.IntRange
+androidx.annotation.IntegerRes
+androidx.annotation.InterpolatorRes
+androidx.annotation.LayoutRes
+androidx.annotation.LongDef
+androidx.annotation.MainThread
+androidx.annotation.MenuRes
+androidx.annotation.NavigationRes
+androidx.annotation.NonNull
+androidx.annotation.Nullable
+androidx.annotation.OptIn
+androidx.annotation.PluralsRes
+androidx.annotation.Px
+androidx.annotation.RawRes
+androidx.annotation.RequiresApi
+androidx.annotation.RequiresFeature
+androidx.annotation.RequiresOptIn$Level
+androidx.annotation.RequiresOptIn
+androidx.annotation.RequiresPermission$Read
+androidx.annotation.RequiresPermission$Write
+androidx.annotation.RequiresPermission
+androidx.annotation.RestrictTo$Scope
+androidx.annotation.RestrictTo
+androidx.annotation.Size
+androidx.annotation.StringDef
+androidx.annotation.StringRes
+androidx.annotation.StyleRes
+androidx.annotation.StyleableRes
+androidx.annotation.TransitionRes
+androidx.annotation.UiThread
+androidx.annotation.VisibleForTesting
+androidx.annotation.WorkerThread
+androidx.annotation.XmlRes
+androidx.annotation.experimental.Experimental$Level
+androidx.annotation.experimental.Experimental
+androidx.annotation.experimental.R
+androidx.annotation.experimental.UseExperimental
+androidx.arch.core.R
+androidx.arch.core.executor.ArchTaskExecutor:
+    public static java.util.concurrent.Executor getMainThreadExecutor()
+    public boolean isMainThread()
+    public void setDelegate(androidx.arch.core.executor.TaskExecutor)
+androidx.arch.core.executor.DefaultTaskExecutor$1:
+    private static final java.lang.String THREAD_NAME_STEM
+androidx.arch.core.executor.DefaultTaskExecutor:
+    public boolean isMainThread()
+androidx.arch.core.executor.TaskExecutor:
+    public void executeOnMainThread(java.lang.Runnable)
+    public abstract boolean isMainThread()
+androidx.arch.core.internal.FastSafeIterableMap
+androidx.arch.core.internal.SafeIterableMap$DescendingIterator
+androidx.arch.core.internal.SafeIterableMap$IteratorWithAdditions
+androidx.arch.core.internal.SafeIterableMap:
+    public java.util.Iterator descendingIterator()
+    public java.util.Map$Entry eldest()
+    public androidx.arch.core.internal.SafeIterableMap$IteratorWithAdditions iteratorWithAdditions()
+    public java.util.Map$Entry newest()
+androidx.room.AutoCloser:
+    public int getRefCountForTest()
+androidx.room.AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase:
+    public void beginTransactionWithListener(android.database.sqlite.SQLiteTransactionListener)
+    public void beginTransactionWithListenerNonExclusive(android.database.sqlite.SQLiteTransactionListener)
+    public int delete(java.lang.String,java.lang.String,java.lang.Object[])
+    public void disableWriteAheadLogging()
+    public boolean enableWriteAheadLogging()
+    public void execSQL(java.lang.String,java.lang.Object[])
+    public long getMaximumSize()
+    public long getPageSize()
+    public int getVersion()
+    public long insert(java.lang.String,int,android.content.ContentValues)
+    public boolean isDatabaseIntegrityOk()
+    public boolean isDbLockedByCurrentThread()
+    public boolean isReadOnly()
+    private static synthetic java.lang.Integer lambda$delete$5(java.lang.String,java.lang.String,java.lang.Object[],androidx.sqlite.db.SupportSQLiteDatabase)
+    private static synthetic java.lang.Object lambda$execSQL$8(java.lang.String,java.lang.Object[],androidx.sqlite.db.SupportSQLiteDatabase)
+    private static synthetic java.lang.Long lambda$insert$4(java.lang.String,int,android.content.ContentValues,androidx.sqlite.db.SupportSQLiteDatabase)
+    private static synthetic java.lang.Boolean lambda$needUpgrade$9(int,androidx.sqlite.db.SupportSQLiteDatabase)
+    private static synthetic java.lang.Object lambda$setForeignKeyConstraintsEnabled$12(boolean,androidx.sqlite.db.SupportSQLiteDatabase)
+    private static synthetic java.lang.Object lambda$setLocale$10(java.util.Locale,androidx.sqlite.db.SupportSQLiteDatabase)
+    private static synthetic java.lang.Object lambda$setMaxSqlCacheSize$11(int,androidx.sqlite.db.SupportSQLiteDatabase)
+    private static synthetic java.lang.Long lambda$setMaximumSize$2(long,androidx.sqlite.db.SupportSQLiteDatabase)
+    private static synthetic java.lang.Object lambda$setPageSize$3(long,androidx.sqlite.db.SupportSQLiteDatabase)
+    private static synthetic java.lang.Integer lambda$update$6(java.lang.String,int,android.content.ContentValues,java.lang.String,java.lang.Object[],androidx.sqlite.db.SupportSQLiteDatabase)
+    public boolean needUpgrade(int)
+    public android.database.Cursor query(java.lang.String,java.lang.Object[])
+    public void setForeignKeyConstraintsEnabled(boolean)
+    public void setLocale(java.util.Locale)
+    public void setMaxSqlCacheSize(int)
+    public long setMaximumSize(long)
+    public void setPageSize(long)
+    public int update(java.lang.String,int,android.content.ContentValues,java.lang.String,java.lang.Object[])
+    public boolean yieldIfContendedSafely()
+    public boolean yieldIfContendedSafely(long)
+androidx.room.AutoClosingRoomOpenHelper$AutoClosingSupportSqliteStatement:
+    public void clearBindings()
+    public void execute()
+    private static synthetic java.lang.Object lambda$execute$1(androidx.sqlite.db.SupportSQLiteStatement)
+    public long simpleQueryForLong()
+    public java.lang.String simpleQueryForString()
+androidx.room.AutoClosingRoomOpenHelper:
+    androidx.sqlite.db.SupportSQLiteDatabase getAutoClosingDb()
+androidx.room.AutoMigration
+androidx.room.BuiltInTypeConverters$State
+androidx.room.BuiltInTypeConverters
+androidx.room.ColumnInfo$Collate
+androidx.room.ColumnInfo$SQLiteTypeAffinity
+androidx.room.ColumnInfo
+androidx.room.Dao
+androidx.room.Database
+androidx.room.DatabaseConfiguration:
+    public void <init>(android.content.Context,java.lang.String,androidx.sqlite.db.SupportSQLiteOpenHelper$Factory,androidx.room.RoomDatabase$MigrationContainer,java.util.List,boolean,androidx.room.RoomDatabase$JournalMode,java.util.concurrent.Executor,java.util.concurrent.Executor,boolean,boolean,boolean,java.util.Set)
+    public void <init>(android.content.Context,java.lang.String,androidx.sqlite.db.SupportSQLiteOpenHelper$Factory,androidx.room.RoomDatabase$MigrationContainer,java.util.List,boolean,androidx.room.RoomDatabase$JournalMode,java.util.concurrent.Executor,java.util.concurrent.Executor,boolean,boolean,boolean,java.util.Set,java.lang.String,java.io.File)
+    public void <init>(android.content.Context,java.lang.String,androidx.sqlite.db.SupportSQLiteOpenHelper$Factory,androidx.room.RoomDatabase$MigrationContainer,java.util.List,boolean,androidx.room.RoomDatabase$JournalMode,java.util.concurrent.Executor,java.util.concurrent.Executor,boolean,boolean,boolean,java.util.Set,java.lang.String,java.io.File,java.util.concurrent.Callable)
+    public void <init>(android.content.Context,java.lang.String,androidx.sqlite.db.SupportSQLiteOpenHelper$Factory,androidx.room.RoomDatabase$MigrationContainer,java.util.List,boolean,androidx.room.RoomDatabase$JournalMode,java.util.concurrent.Executor,java.util.concurrent.Executor,boolean,boolean,boolean,java.util.Set,java.lang.String,java.io.File,java.util.concurrent.Callable,androidx.room.RoomDatabase$PrepackagedDatabaseCallback)
+    public void <init>(android.content.Context,java.lang.String,androidx.sqlite.db.SupportSQLiteOpenHelper$Factory,androidx.room.RoomDatabase$MigrationContainer,java.util.List,boolean,androidx.room.RoomDatabase$JournalMode,java.util.concurrent.Executor,java.util.concurrent.Executor,boolean,boolean,boolean,java.util.Set,java.lang.String,java.io.File,java.util.concurrent.Callable,androidx.room.RoomDatabase$PrepackagedDatabaseCallback,java.util.List)
+    public void <init>(android.content.Context,java.lang.String,androidx.sqlite.db.SupportSQLiteOpenHelper$Factory,androidx.room.RoomDatabase$MigrationContainer,java.util.List,boolean,androidx.room.RoomDatabase$JournalMode,java.util.concurrent.Executor,java.util.concurrent.Executor,boolean,boolean,boolean,java.util.Set,java.lang.String,java.io.File,java.util.concurrent.Callable,androidx.room.RoomDatabase$PrepackagedDatabaseCallback,java.util.List,java.util.List)
+    public void <init>(android.content.Context,java.lang.String,androidx.sqlite.db.SupportSQLiteOpenHelper$Factory,androidx.room.RoomDatabase$MigrationContainer,java.util.List,boolean,androidx.room.RoomDatabase$JournalMode,java.util.concurrent.Executor,boolean,java.util.Set)
+    public boolean isMigrationRequiredFrom(int)
+androidx.room.DatabaseView
+androidx.room.Delete
+androidx.room.DeleteColumn$Entries
+androidx.room.DeleteColumn
+androidx.room.DeleteTable$Entries
+androidx.room.DeleteTable
+androidx.room.Embedded
+androidx.room.Entity
+androidx.room.EntityDeletionOrUpdateAdapter
+androidx.room.EntityInsertionAdapter:
+    public final void insert(java.lang.Object)
+    public final void insert(java.lang.Object[])
+    public final long insertAndReturnId(java.lang.Object)
+    public final long[] insertAndReturnIdsArray(java.util.Collection)
+    public final long[] insertAndReturnIdsArray(java.lang.Object[])
+    public final java.lang.Long[] insertAndReturnIdsArrayBox(java.util.Collection)
+    public final java.lang.Long[] insertAndReturnIdsArrayBox(java.lang.Object[])
+    public final java.util.List insertAndReturnIdsList(java.util.Collection)
+    public final java.util.List insertAndReturnIdsList(java.lang.Object[])
+androidx.room.ExperimentalRoomApi
+androidx.room.ForeignKey$Action
+androidx.room.ForeignKey
+androidx.room.Fts3
+androidx.room.Fts4
+androidx.room.FtsOptions$MatchInfo
+androidx.room.FtsOptions$Order
+androidx.room.FtsOptions
+androidx.room.IMultiInstanceInvalidationCallback$Default
+androidx.room.IMultiInstanceInvalidationCallback$Stub$Proxy:
+    public java.lang.String getInterfaceDescriptor()
+androidx.room.IMultiInstanceInvalidationCallback$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_onInvalidation
+    public static boolean setDefaultImpl(androidx.room.IMultiInstanceInvalidationCallback)
+androidx.room.IMultiInstanceInvalidationService$Default
+androidx.room.IMultiInstanceInvalidationService$Stub$Proxy:
+    public java.lang.String getInterfaceDescriptor()
+    public void unregisterCallback(androidx.room.IMultiInstanceInvalidationCallback,int)
+androidx.room.IMultiInstanceInvalidationService$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_broadcastInvalidation
+    static final int TRANSACTION_registerCallback
+    static final int TRANSACTION_unregisterCallback
+    public static boolean setDefaultImpl(androidx.room.IMultiInstanceInvalidationService)
+androidx.room.Ignore
+androidx.room.Index
+androidx.room.Insert
+androidx.room.InvalidationLiveDataContainer:
+    androidx.lifecycle.LiveData create(java.lang.String[],boolean,java.util.concurrent.Callable)
+    void onActive(androidx.lifecycle.LiveData)
+    void onInactive(androidx.lifecycle.LiveData)
+androidx.room.InvalidationTracker$ObservedTableTracker:
+    static final int ADD
+    static final int NO_OP
+    static final int REMOVE
+androidx.room.InvalidationTracker$Observer:
+    protected varargs void <init>(java.lang.String,java.lang.String[])
+androidx.room.InvalidationTracker$WeakObserver
+androidx.room.InvalidationTracker:
+    private static final java.lang.String CREATE_TRACKING_TABLE_SQL
+    private static final java.lang.String INVALIDATED_COLUMN_NAME
+    static final java.lang.String RESET_UPDATED_TABLES_SQL
+    static final java.lang.String SELECT_UPDATED_TABLES_SQL
+    private static final java.lang.String TABLE_ID_COLUMN_NAME
+    private static final java.lang.String UPDATE_TABLE_NAME
+    public varargs void <init>(androidx.room.RoomDatabase,java.lang.String[])
+    public void addWeakObserver(androidx.room.InvalidationTracker$Observer)
+    public androidx.lifecycle.LiveData createLiveData(java.lang.String[],java.util.concurrent.Callable)
+    public androidx.lifecycle.LiveData createLiveData(java.lang.String[],boolean,java.util.concurrent.Callable)
+    public void refreshVersionsSync()
+    void stopMultiInstanceInvalidation()
+    private java.lang.String[] validateAndResolveTableNames(java.lang.String[])
+androidx.room.Junction
+androidx.room.MapInfo
+androidx.room.MultiInstanceInvalidationClient:
+    void stop()
+androidx.room.OnConflictStrategy
+androidx.room.PrimaryKey
+androidx.room.ProvidedAutoMigrationSpec
+androidx.room.ProvidedTypeConverter
+androidx.room.Query
+androidx.room.QueryInterceptorDatabase:
+    public void beginTransactionWithListener(android.database.sqlite.SQLiteTransactionListener)
+    public void beginTransactionWithListenerNonExclusive(android.database.sqlite.SQLiteTransactionListener)
+    public int delete(java.lang.String,java.lang.String,java.lang.Object[])
+    public void disableWriteAheadLogging()
+    public boolean enableWriteAheadLogging()
+    public void execSQL(java.lang.String,java.lang.Object[])
+    public long getMaximumSize()
+    public long getPageSize()
+    public int getVersion()
+    public long insert(java.lang.String,int,android.content.ContentValues)
+    public boolean isDatabaseIntegrityOk()
+    public boolean isDbLockedByCurrentThread()
+    public boolean isReadOnly()
+    private synthetic void lambda$beginTransactionWithListener$2()
+    private synthetic void lambda$beginTransactionWithListenerNonExclusive$3()
+    private synthetic void lambda$execSQL$11(java.lang.String,java.util.List)
+    private synthetic void lambda$query$7(java.lang.String,java.util.List)
+    public boolean needUpgrade(int)
+    public android.database.Cursor query(java.lang.String,java.lang.Object[])
+    public void setForeignKeyConstraintsEnabled(boolean)
+    public void setLocale(java.util.Locale)
+    public void setMaxSqlCacheSize(int)
+    public long setMaximumSize(long)
+    public void setPageSize(long)
+    public int update(java.lang.String,int,android.content.ContentValues,java.lang.String,java.lang.Object[])
+    public boolean yieldIfContendedSafely()
+    public boolean yieldIfContendedSafely(long)
+androidx.room.QueryInterceptorProgram:
+    public void clearBindings()
+androidx.room.QueryInterceptorStatement:
+    public void clearBindings()
+    public void execute()
+    private synthetic void lambda$execute$0()
+    private synthetic void lambda$simpleQueryForLong$3()
+    private synthetic void lambda$simpleQueryForString$4()
+    public long simpleQueryForLong()
+    public java.lang.String simpleQueryForString()
+androidx.room.R
+androidx.room.RawQuery
+androidx.room.Relation
+androidx.room.RenameColumn$Entries
+androidx.room.RenameColumn
+androidx.room.RenameTable$Entries
+androidx.room.RenameTable
+androidx.room.RewriteQueriesToDropUnusedColumns
+androidx.room.Room:
+    private static final java.lang.String CURSOR_CONV_SUFFIX
+    static final java.lang.String LOG_TAG
+    public static final java.lang.String MASTER_TABLE_NAME
+    public void <init>()
+    public static androidx.room.RoomDatabase$Builder inMemoryDatabaseBuilder(android.content.Context,java.lang.Class)
+androidx.room.RoomDatabase$Builder:
+    public androidx.room.RoomDatabase$Builder addAutoMigrationSpec(androidx.room.migration.AutoMigrationSpec)
+    public androidx.room.RoomDatabase$Builder addCallback(androidx.room.RoomDatabase$Callback)
+    public varargs androidx.room.RoomDatabase$Builder addMigrations(androidx.room.migration.Migration[])
+    public androidx.room.RoomDatabase$Builder addTypeConverter(java.lang.Object)
+    public androidx.room.RoomDatabase$Builder allowMainThreadQueries()
+    public androidx.room.RoomDatabase$Builder createFromAsset(java.lang.String)
+    public androidx.room.RoomDatabase$Builder createFromAsset(java.lang.String,androidx.room.RoomDatabase$PrepackagedDatabaseCallback)
+    public androidx.room.RoomDatabase$Builder createFromFile(java.io.File)
+    public androidx.room.RoomDatabase$Builder createFromFile(java.io.File,androidx.room.RoomDatabase$PrepackagedDatabaseCallback)
+    public androidx.room.RoomDatabase$Builder createFromInputStream(java.util.concurrent.Callable)
+    public androidx.room.RoomDatabase$Builder createFromInputStream(java.util.concurrent.Callable,androidx.room.RoomDatabase$PrepackagedDatabaseCallback)
+    public androidx.room.RoomDatabase$Builder enableMultiInstanceInvalidation()
+    public androidx.room.RoomDatabase$Builder fallbackToDestructiveMigration()
+    public varargs androidx.room.RoomDatabase$Builder fallbackToDestructiveMigrationFrom(int[])
+    public androidx.room.RoomDatabase$Builder fallbackToDestructiveMigrationOnDowngrade()
+    public androidx.room.RoomDatabase$Builder openHelperFactory(androidx.sqlite.db.SupportSQLiteOpenHelper$Factory)
+    public androidx.room.RoomDatabase$Builder setAutoCloseTimeout(long,java.util.concurrent.TimeUnit)
+    public androidx.room.RoomDatabase$Builder setMultiInstanceInvalidationServiceIntent(android.content.Intent)
+    public androidx.room.RoomDatabase$Builder setQueryCallback(androidx.room.RoomDatabase$QueryCallback,java.util.concurrent.Executor)
+    public androidx.room.RoomDatabase$Builder setQueryExecutor(java.util.concurrent.Executor)
+    public androidx.room.RoomDatabase$Builder setTransactionExecutor(java.util.concurrent.Executor)
+androidx.room.RoomDatabase$Callback:
+    public void <init>()
+androidx.room.RoomDatabase$MigrationContainer:
+    public void addMigrations(java.util.List)
+androidx.room.RoomDatabase$PrepackagedDatabaseCallback:
+    public void <init>()
+androidx.room.RoomDatabase:
+    private static final java.lang.String DB_IMPL_SUFFIX
+    public static final int MAX_BIND_PARAMETER_CNT
+    public abstract void clearAllTables()
+    public void close()
+    java.util.Map getBackingFieldMap()
+    public androidx.room.InvalidationTracker getInvalidationTracker()
+    java.lang.ThreadLocal getSuspendingTransactionId()
+    public java.util.concurrent.Executor getTransactionExecutor()
+    public java.lang.Object getTypeConverter(java.lang.Class)
+    public android.database.Cursor query(java.lang.String,java.lang.Object[])
+    public java.lang.Object runInTransaction(java.util.concurrent.Callable)
+    public void runInTransaction(java.lang.Runnable)
+androidx.room.RoomMasterTable:
+    private static final java.lang.String COLUMN_ID
+    private static final java.lang.String COLUMN_IDENTITY_HASH
+    public static final java.lang.String CREATE_QUERY
+    public static final java.lang.String DEFAULT_ID
+    public static final java.lang.String NAME
+    public static final java.lang.String READ_QUERY
+    public static final java.lang.String TABLE_NAME
+    private void <init>()
+androidx.room.RoomOpenHelper$Delegate:
+    protected void validateMigration(androidx.sqlite.db.SupportSQLiteDatabase)
+androidx.room.RoomOpenHelper:
+    public void <init>(androidx.room.DatabaseConfiguration,androidx.room.RoomOpenHelper$Delegate,java.lang.String)
+androidx.room.RoomSQLiteQuery$1
+androidx.room.RoomSQLiteQuery
+androidx.room.RoomTrackingLiveData$1
+androidx.room.RoomTrackingLiveData$2
+androidx.room.RoomTrackingLiveData$3
+androidx.room.RoomTrackingLiveData
+androidx.room.RoomWarnings
+androidx.room.SkipQueryVerification
+androidx.room.Transaction
+androidx.room.TypeConverter
+androidx.room.TypeConverters
+androidx.room.Update
+androidx.room.migration.AutoMigrationSpec:
+    public void onPostMigrate(androidx.sqlite.db.SupportSQLiteDatabase)
+androidx.room.migration.Migration:
+    public void <init>(int,int)
+androidx.room.paging.LimitOffsetDataSource$1
+androidx.room.paging.LimitOffsetDataSource
+androidx.room.util.CursorUtil
+androidx.room.util.DBUtil:
+    private void <init>()
+    public static android.os.CancellationSignal createCancellationSignal()
+    public static void foreignKeyCheck(androidx.sqlite.db.SupportSQLiteDatabase,java.lang.String)
+    private static java.lang.String processForeignKeyCheckFailure(android.database.Cursor)
+    public static android.database.Cursor query(androidx.room.RoomDatabase,androidx.sqlite.db.SupportSQLiteQuery,boolean)
+    public static android.database.Cursor query(androidx.room.RoomDatabase,androidx.sqlite.db.SupportSQLiteQuery,boolean,android.os.CancellationSignal)
+androidx.room.util.FileUtil:
+    private void <init>()
+androidx.room.util.FtsTableInfo
+androidx.room.util.SneakyThrow:
+    private void <init>()
+androidx.room.util.StringUtil
+androidx.room.util.TableInfo$Column:
+    public void <init>(java.lang.String,java.lang.String,boolean,int)
+androidx.room.util.TableInfo$Index:
+    public static final java.lang.String DEFAULT_PREFIX
+    public void <init>(java.lang.String,boolean,java.util.List)
+androidx.room.util.TableInfo:
+    public static final int CREATED_FROM_DATABASE
+    public static final int CREATED_FROM_ENTITY
+    public static final int CREATED_FROM_UNKNOWN
+    public void <init>(java.lang.String,java.util.Map,java.util.Set)
+androidx.room.util.UUIDUtil
+androidx.room.util.ViewInfo
+androidx.sqlite.db.R
+androidx.sqlite.db.SimpleSQLiteQuery:
+    public int getArgCount()
+androidx.sqlite.db.SupportSQLiteCompat$Api16Impl:
+    private void <init>()
+    public static void cancel(android.os.CancellationSignal)
+    public static android.os.CancellationSignal createCancellationSignal()
+    public static void disableWriteAheadLogging(android.database.sqlite.SQLiteDatabase)
+    public static void setForeignKeyConstraintsEnabled(android.database.sqlite.SQLiteDatabase,boolean)
+androidx.sqlite.db.SupportSQLiteCompat$Api19Impl:
+    private void <init>()
+androidx.sqlite.db.SupportSQLiteCompat$Api21Impl:
+    private void <init>()
+androidx.sqlite.db.SupportSQLiteCompat$Api23Impl:
+    private void <init>()
+androidx.sqlite.db.SupportSQLiteCompat$Api29Impl:
+    private void <init>()
+androidx.sqlite.db.SupportSQLiteCompat
+androidx.sqlite.db.SupportSQLiteDatabase:
+    public abstract void beginTransactionWithListener(android.database.sqlite.SQLiteTransactionListener)
+    public abstract void beginTransactionWithListenerNonExclusive(android.database.sqlite.SQLiteTransactionListener)
+    public abstract int delete(java.lang.String,java.lang.String,java.lang.Object[])
+    public abstract void disableWriteAheadLogging()
+    public abstract boolean enableWriteAheadLogging()
+    public void execPerConnectionSQL(java.lang.String,java.lang.Object[])
+    public abstract void execSQL(java.lang.String,java.lang.Object[])
+    public abstract long getMaximumSize()
+    public abstract long getPageSize()
+    public abstract int getVersion()
+    public abstract long insert(java.lang.String,int,android.content.ContentValues)
+    public abstract boolean isDatabaseIntegrityOk()
+    public abstract boolean isDbLockedByCurrentThread()
+    public boolean isExecPerConnectionSQLSupported()
+    public abstract boolean isReadOnly()
+    public abstract boolean needUpgrade(int)
+    public abstract android.database.Cursor query(java.lang.String,java.lang.Object[])
+    public abstract void setForeignKeyConstraintsEnabled(boolean)
+    public abstract void setLocale(java.util.Locale)
+    public abstract void setMaxSqlCacheSize(int)
+    public abstract long setMaximumSize(long)
+    public abstract void setPageSize(long)
+    public abstract int update(java.lang.String,int,android.content.ContentValues,java.lang.String,java.lang.Object[])
+    public abstract boolean yieldIfContendedSafely()
+    public abstract boolean yieldIfContendedSafely(long)
+androidx.sqlite.db.SupportSQLiteOpenHelper$Callback:
+    private static final java.lang.String TAG
+androidx.sqlite.db.SupportSQLiteOpenHelper$Configuration$Builder:
+    public androidx.sqlite.db.SupportSQLiteOpenHelper$Configuration$Builder noBackupDirectory(boolean)
+androidx.sqlite.db.SupportSQLiteOpenHelper$Configuration:
+    void <init>(android.content.Context,java.lang.String,androidx.sqlite.db.SupportSQLiteOpenHelper$Callback)
+androidx.sqlite.db.SupportSQLiteProgram:
+    public abstract void clearBindings()
+androidx.sqlite.db.SupportSQLiteQuery:
+    public abstract int getArgCount()
+androidx.sqlite.db.SupportSQLiteQueryBuilder
+androidx.sqlite.db.SupportSQLiteStatement:
+    public abstract void execute()
+    public abstract long simpleQueryForLong()
+    public abstract java.lang.String simpleQueryForString()
+androidx.sqlite.db.framework.FrameworkSQLiteDatabase:
+    public void beginTransactionWithListener(android.database.sqlite.SQLiteTransactionListener)
+    public void beginTransactionWithListenerNonExclusive(android.database.sqlite.SQLiteTransactionListener)
+    public int delete(java.lang.String,java.lang.String,java.lang.Object[])
+    public void disableWriteAheadLogging()
+    public boolean enableWriteAheadLogging()
+    public void execPerConnectionSQL(java.lang.String,java.lang.Object[])
+    public void execSQL(java.lang.String,java.lang.Object[])
+    public long getMaximumSize()
+    public long getPageSize()
+    public int getVersion()
+    public long insert(java.lang.String,int,android.content.ContentValues)
+    public boolean isDatabaseIntegrityOk()
+    public boolean isDbLockedByCurrentThread()
+    public boolean isExecPerConnectionSQLSupported()
+    public boolean isReadOnly()
+    public boolean needUpgrade(int)
+    public android.database.Cursor query(java.lang.String,java.lang.Object[])
+    public void setForeignKeyConstraintsEnabled(boolean)
+    public void setLocale(java.util.Locale)
+    public void setMaxSqlCacheSize(int)
+    public long setMaximumSize(long)
+    public void setPageSize(long)
+    public int update(java.lang.String,int,android.content.ContentValues,java.lang.String,java.lang.Object[])
+    public boolean yieldIfContendedSafely()
+    public boolean yieldIfContendedSafely(long)
+androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper:
+    void <init>(android.content.Context,java.lang.String,androidx.sqlite.db.SupportSQLiteOpenHelper$Callback)
+androidx.sqlite.db.framework.FrameworkSQLiteProgram:
+    public void clearBindings()
+androidx.sqlite.db.framework.FrameworkSQLiteStatement:
+    public void execute()
+    public long simpleQueryForLong()
+    public java.lang.String simpleQueryForString()
+androidx.sqlite.db.framework.R
+com.example.roomr8.BuildConfig
+com.example.roomr8.R$color
+com.example.roomr8.R$dimen
+com.example.roomr8.R$drawable
+com.example.roomr8.R$mipmap
+com.example.roomr8.R$string
+com.example.roomr8.R
+com.example.roomr8.TestInitializer$TestDao:
+    public abstract java.util.List loadEntities()
+com.example.roomr8.TestInitializer$TestEntity:
+    public final int component1()
+    public final java.lang.String component2()
+    public final com.example.roomr8.TestInitializer$TestEntity copy(int,java.lang.String)
+    public static synthetic com.example.roomr8.TestInitializer$TestEntity copy$default(com.example.roomr8.TestInitializer$TestEntity,int,java.lang.String,int,java.lang.Object)
+com.example.roomr8.TestInitializerTestDao_Impl:
+    public java.util.List loadEntities()
+com.example.roomr8.TestInitializer_TestDatabase_Impl:
+    public void clearAllTables()
+kotlin.ArrayIntrinsicsKt
+kotlin.BuilderInference
+kotlin.CharCodeJVMKt
+kotlin.CharCodeKt
+kotlin.CompareToKt
+kotlin.DeepRecursiveFunction
+kotlin.DeepRecursiveKt
+kotlin.DeepRecursiveScope
+kotlin.DeepRecursiveScopeImpl$crossFunctionCompletion$$inlined$Continuation$1
+kotlin.DeepRecursiveScopeImpl
+kotlin.Deprecated
+kotlin.DeprecatedSinceKotlin
+kotlin.DeprecationLevel
+kotlin.DslMarker
+kotlin.ExceptionsKt
+kotlin.ExceptionsKt__ExceptionsKt
+kotlin.Experimental$Level
+kotlin.Experimental
+kotlin.ExperimentalMultiplatform
+kotlin.ExperimentalStdlibApi
+kotlin.ExperimentalUnsignedTypes
+kotlin.ExtensionFunctionType
+kotlin.Function
+kotlin.HashCodeKt
+kotlin.InitializedLazyImpl
+kotlin.KotlinNothingValueException
+kotlin.KotlinNullPointerException
+kotlin.KotlinVersion$Companion
+kotlin.KotlinVersion
+kotlin.KotlinVersionCurrentValue
+kotlin.LateinitKt
+kotlin.Lazy
+kotlin.LazyKt
+kotlin.LazyKt__LazyJVMKt$WhenMappings
+kotlin.LazyKt__LazyJVMKt
+kotlin.LazyKt__LazyKt
+kotlin.LazyThreadSafetyMode
+kotlin.Metadata$DefaultImpls
+kotlin.Metadata
+kotlin.NoWhenBranchMatchedException
+kotlin.NotImplementedError
+kotlin.NumbersKt
+kotlin.NumbersKt__BigDecimalsKt
+kotlin.NumbersKt__BigIntegersKt
+kotlin.NumbersKt__FloorDivModKt
+kotlin.NumbersKt__NumbersJVMKt
+kotlin.NumbersKt__NumbersKt
+kotlin.OptIn
+kotlin.OptionalExpectation
+kotlin.OverloadResolutionByLambdaReturnType
+kotlin.Pair
+kotlin.ParameterName
+kotlin.PreconditionsKt
+kotlin.PreconditionsKt__AssertionsJVMKt
+kotlin.PreconditionsKt__PreconditionsKt
+kotlin.PropertyReferenceDelegatesKt
+kotlin.PublishedApi
+kotlin.ReplaceWith
+kotlin.RequiresOptIn$Level
+kotlin.RequiresOptIn
+kotlin.Result$Companion
+kotlin.Result$Failure
+kotlin.Result
+kotlin.ResultKt
+kotlin.SafePublicationLazyImpl$Companion
+kotlin.SafePublicationLazyImpl
+kotlin.SinceKotlin
+kotlin.StandardKt
+kotlin.StandardKt__StandardKt
+kotlin.StandardKt__SynchronizedKt
+kotlin.Suppress
+kotlin.SuspendKt
+kotlin.SynchronizedLazyImpl
+kotlin.ThrowsKt
+kotlin.Triple
+kotlin.TuplesKt
+kotlin.TypeAliasesKt
+kotlin.TypeCastException
+kotlin.UByte$Companion
+kotlin.UByte
+kotlin.UByteArray$Iterator
+kotlin.UByteArray
+kotlin.UByteArrayKt
+kotlin.UByteKt
+kotlin.UInt$Companion
+kotlin.UInt
+kotlin.UIntArray$Iterator
+kotlin.UIntArray
+kotlin.UIntArrayKt
+kotlin.UIntKt
+kotlin.ULong$Companion
+kotlin.ULong
+kotlin.ULongArray$Iterator
+kotlin.ULongArray
+kotlin.ULongArrayKt
+kotlin.ULongKt
+kotlin.UNINITIALIZED_VALUE
+kotlin.UNumbersKt
+kotlin.UShort$Companion
+kotlin.UShort
+kotlin.UShortArray$Iterator
+kotlin.UShortArray
+kotlin.UShortArrayKt
+kotlin.UShortKt
+kotlin.UninitializedPropertyAccessException
+kotlin.UnsafeLazyImpl
+kotlin.UnsafeVariance
+kotlin.UnsignedKt
+kotlin.UseExperimental
+kotlin.WasExperimental
+kotlin._Assertions
+kotlin.annotation.AnnotationRetention
+kotlin.annotation.AnnotationTarget
+kotlin.annotation.MustBeDocumented
+kotlin.annotation.Repeatable
+kotlin.annotation.Retention
+kotlin.annotation.Target
+kotlin.collections.AbstractCollection$toString$1
+kotlin.collections.AbstractCollection
+kotlin.collections.AbstractIterator$WhenMappings
+kotlin.collections.AbstractIterator
+kotlin.collections.AbstractList$Companion
+kotlin.collections.AbstractList$IteratorImpl
+kotlin.collections.AbstractList$ListIteratorImpl
+kotlin.collections.AbstractList$SubList
+kotlin.collections.AbstractList
+kotlin.collections.AbstractMap$Companion
+kotlin.collections.AbstractMap$keys$1$iterator$1
+kotlin.collections.AbstractMap$keys$1
+kotlin.collections.AbstractMap$toString$1
+kotlin.collections.AbstractMap$values$1$iterator$1
+kotlin.collections.AbstractMap$values$1
+kotlin.collections.AbstractMap
+kotlin.collections.AbstractMutableCollection
+kotlin.collections.AbstractMutableList
+kotlin.collections.AbstractMutableMap
+kotlin.collections.AbstractMutableSet
+kotlin.collections.AbstractSet$Companion
+kotlin.collections.AbstractSet
+kotlin.collections.ArrayAsCollection
+kotlin.collections.ArrayDeque$Companion
+kotlin.collections.ArrayDeque
+kotlin.collections.ArraysKt
+kotlin.collections.ArraysKt__ArraysJVMKt
+kotlin.collections.ArraysKt__ArraysKt
+kotlin.collections.ArraysKt___ArraysJvmKt$asList$1
+kotlin.collections.ArraysKt___ArraysJvmKt$asList$2
+kotlin.collections.ArraysKt___ArraysJvmKt$asList$3
+kotlin.collections.ArraysKt___ArraysJvmKt$asList$4
+kotlin.collections.ArraysKt___ArraysJvmKt$asList$5
+kotlin.collections.ArraysKt___ArraysJvmKt$asList$6
+kotlin.collections.ArraysKt___ArraysJvmKt$asList$7
+kotlin.collections.ArraysKt___ArraysJvmKt$asList$8
+kotlin.collections.ArraysKt___ArraysJvmKt
+kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$1
+kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$2
+kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$3
+kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$4
+kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$5
+kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$6
+kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$7
+kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$8
+kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$9
+kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$1
+kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$2
+kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$3
+kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$4
+kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$5
+kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$6
+kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$7
+kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$8
+kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$9
+kotlin.collections.ArraysKt___ArraysKt$groupingBy$1
+kotlin.collections.ArraysKt___ArraysKt$withIndex$1
+kotlin.collections.ArraysKt___ArraysKt$withIndex$2
+kotlin.collections.ArraysKt___ArraysKt$withIndex$3
+kotlin.collections.ArraysKt___ArraysKt$withIndex$4
+kotlin.collections.ArraysKt___ArraysKt$withIndex$5
+kotlin.collections.ArraysKt___ArraysKt$withIndex$6
+kotlin.collections.ArraysKt___ArraysKt$withIndex$7
+kotlin.collections.ArraysKt___ArraysKt$withIndex$8
+kotlin.collections.ArraysKt___ArraysKt$withIndex$9
+kotlin.collections.ArraysKt___ArraysKt
+kotlin.collections.ArraysUtilJVM
+kotlin.collections.BooleanIterator
+kotlin.collections.BrittleContainsOptimizationKt
+kotlin.collections.ByteIterator
+kotlin.collections.CharIterator
+kotlin.collections.CollectionSystemProperties
+kotlin.collections.CollectionsKt:
+    private void <init>()
+kotlin.collections.CollectionsKt__CollectionsJVMKt:
+    public void <init>()
+    public static final boolean brittleContainsOptimizationEnabled()
+    public static final java.util.List build(java.util.List)
+    private static final java.util.List buildListInternal(int,kotlin.jvm.functions.Function1)
+    private static final java.util.List buildListInternal(kotlin.jvm.functions.Function1)
+    private static final int checkCountOverflow(int)
+    private static final int checkIndexOverflow(int)
+    private static final java.lang.Object[] copyToArrayImpl(java.util.Collection)
+    private static final java.lang.Object[] copyToArrayImpl(java.util.Collection,java.lang.Object[])
+    public static final java.lang.Object[] copyToArrayOfAny(java.lang.Object[],boolean)
+    public static final java.util.List createListBuilder()
+    public static final java.util.List createListBuilder(int)
+    public static final java.util.List shuffled(java.lang.Iterable)
+    public static final java.util.List shuffled(java.lang.Iterable,java.util.Random)
+    private static final java.util.List toList(java.util.Enumeration)
+kotlin.collections.CollectionsKt__CollectionsKt$binarySearchBy$1
+kotlin.collections.CollectionsKt__CollectionsKt:
+    public void <init>()
+    private static final java.util.List List(int,kotlin.jvm.functions.Function1)
+    private static final java.util.List MutableList(int,kotlin.jvm.functions.Function1)
+    private static final java.util.ArrayList arrayListOf()
+    public static final varargs java.util.ArrayList arrayListOf(java.lang.Object[])
+    public static final java.util.Collection asCollection(java.lang.Object[])
+    public static final int binarySearch(java.util.List,int,int,kotlin.jvm.functions.Function1)
+    public static final int binarySearch(java.util.List,java.lang.Comparable,int,int)
+    public static final int binarySearch(java.util.List,java.lang.Object,java.util.Comparator,int,int)
+    public static synthetic int binarySearch$default(java.util.List,int,int,kotlin.jvm.functions.Function1,int,java.lang.Object)
+    public static synthetic int binarySearch$default(java.util.List,java.lang.Comparable,int,int,int,java.lang.Object)
+    public static synthetic int binarySearch$default(java.util.List,java.lang.Object,java.util.Comparator,int,int,int,java.lang.Object)
+    public static final int binarySearchBy(java.util.List,java.lang.Comparable,int,int,kotlin.jvm.functions.Function1)
+    public static synthetic int binarySearchBy$default(java.util.List,java.lang.Comparable,int,int,kotlin.jvm.functions.Function1,int,java.lang.Object)
+    private static final java.util.List buildList(int,kotlin.jvm.functions.Function1)
+    private static final java.util.List buildList(kotlin.jvm.functions.Function1)
+    private static final boolean containsAll(java.util.Collection,java.util.Collection)
+    public static final java.util.List emptyList()
+    public static final kotlin.ranges.IntRange getIndices(java.util.Collection)
+    public static final int getLastIndex(java.util.List)
+    private static final java.lang.Object ifEmpty(java.util.Collection,kotlin.jvm.functions.Function0)
+    private static final boolean isNotEmpty(java.util.Collection)
+    private static final boolean isNullOrEmpty(java.util.Collection)
+    private static final java.util.List listOf()
+    public static final varargs java.util.List listOf(java.lang.Object[])
+    public static final java.util.List listOfNotNull(java.lang.Object)
+    public static final varargs java.util.List listOfNotNull(java.lang.Object[])
+    private static final java.util.List mutableListOf()
+    public static final varargs java.util.List mutableListOf(java.lang.Object[])
+    public static final java.util.List optimizeReadOnlyList(java.util.List)
+    private static final java.util.Collection orEmpty(java.util.Collection)
+    private static final java.util.List orEmpty(java.util.List)
+    private static final void rangeCheck$CollectionsKt__CollectionsKt(int,int,int)
+    public static final java.util.List shuffled(java.lang.Iterable,kotlin.random.Random)
+    public static final void throwCountOverflow()
+    public static final void throwIndexOverflow()
+kotlin.collections.CollectionsKt__IterablesKt$Iterable$1
+kotlin.collections.CollectionsKt__IterablesKt:
+    public void <init>()
+    private static final java.lang.Iterable Iterable(kotlin.jvm.functions.Function0)
+    public static final int collectionSizeOrDefault(java.lang.Iterable,int)
+    public static final java.lang.Integer collectionSizeOrNull(java.lang.Iterable)
+    public static final java.util.List flatten(java.lang.Iterable)
+    public static final kotlin.Pair unzip(java.lang.Iterable)
+kotlin.collections.CollectionsKt__IteratorsJVMKt$iterator$1
+kotlin.collections.CollectionsKt__IteratorsJVMKt:
+    public void <init>()
+    public static final java.util.Iterator iterator(java.util.Enumeration)
+kotlin.collections.CollectionsKt__IteratorsKt:
+    public void <init>()
+    public static final void forEach(java.util.Iterator,kotlin.jvm.functions.Function1)
+    private static final java.util.Iterator iterator(java.util.Iterator)
+    public static final java.util.Iterator withIndex(java.util.Iterator)
+kotlin.collections.CollectionsKt__MutableCollectionsJVMKt:
+    public void <init>()
+    private static final void fill(java.util.List,java.lang.Object)
+    private static final void shuffle(java.util.List)
+    private static final void shuffle(java.util.List,java.util.Random)
+    public static final void sort(java.util.List)
+    private static final void sort(java.util.List,java.util.Comparator)
+    private static final void sort(java.util.List,kotlin.jvm.functions.Function2)
+    public static final void sortWith(java.util.List,java.util.Comparator)
+kotlin.collections.CollectionsKt__MutableCollectionsKt:
+    public void <init>()
+    public static final boolean addAll(java.util.Collection,java.lang.Iterable)
+    public static final boolean addAll(java.util.Collection,kotlin.sequences.Sequence)
+    public static final boolean addAll(java.util.Collection,java.lang.Object[])
+    private static final boolean filterInPlace$CollectionsKt__MutableCollectionsKt(java.lang.Iterable,kotlin.jvm.functions.Function1,boolean)
+    private static final boolean filterInPlace$CollectionsKt__MutableCollectionsKt(java.util.List,kotlin.jvm.functions.Function1,boolean)
+    private static final void minusAssign(java.util.Collection,java.lang.Iterable)
+    private static final void minusAssign(java.util.Collection,java.lang.Object)
+    private static final void minusAssign(java.util.Collection,kotlin.sequences.Sequence)
+    private static final void minusAssign(java.util.Collection,java.lang.Object[])
+    private static final void plusAssign(java.util.Collection,java.lang.Iterable)
+    private static final void plusAssign(java.util.Collection,java.lang.Object)
+    private static final void plusAssign(java.util.Collection,kotlin.sequences.Sequence)
+    private static final void plusAssign(java.util.Collection,java.lang.Object[])
+    private static final java.lang.Object remove(java.util.List,int)
+    private static final boolean remove(java.util.Collection,java.lang.Object)
+    public static final boolean removeAll(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final boolean removeAll(java.util.Collection,java.lang.Iterable)
+    private static final boolean removeAll(java.util.Collection,java.util.Collection)
+    public static final boolean removeAll(java.util.Collection,kotlin.sequences.Sequence)
+    public static final boolean removeAll(java.util.Collection,java.lang.Object[])
+    public static final boolean removeAll(java.util.List,kotlin.jvm.functions.Function1)
+    public static final java.lang.Object removeFirst(java.util.List)
+    public static final java.lang.Object removeFirstOrNull(java.util.List)
+    public static final java.lang.Object removeLast(java.util.List)
+    public static final java.lang.Object removeLastOrNull(java.util.List)
+    public static final boolean retainAll(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final boolean retainAll(java.util.Collection,java.lang.Iterable)
+    private static final boolean retainAll(java.util.Collection,java.util.Collection)
+    public static final boolean retainAll(java.util.Collection,kotlin.sequences.Sequence)
+    public static final boolean retainAll(java.util.Collection,java.lang.Object[])
+    public static final boolean retainAll(java.util.List,kotlin.jvm.functions.Function1)
+    private static final boolean retainNothing$CollectionsKt__MutableCollectionsKt(java.util.Collection)
+kotlin.collections.CollectionsKt__ReversedViewsKt:
+    public void <init>()
+    public static final synthetic int access$reverseElementIndex(java.util.List,int)
+    public static final synthetic int access$reversePositionIndex(java.util.List,int)
+    public static final java.util.List asReversed(java.util.List)
+    public static final java.util.List asReversedMutable(java.util.List)
+    private static final int reverseElementIndex$CollectionsKt__ReversedViewsKt(java.util.List,int)
+    private static final int reversePositionIndex$CollectionsKt__ReversedViewsKt(java.util.List,int)
+kotlin.collections.CollectionsKt___CollectionsJvmKt:
+    public void <init>()
+    public static final java.util.List filterIsInstance(java.lang.Iterable,java.lang.Class)
+    public static final java.util.Collection filterIsInstanceTo(java.lang.Iterable,java.util.Collection,java.lang.Class)
+    public static final void reverse(java.util.List)
+    private static final java.math.BigDecimal sumOfBigDecimal(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final java.math.BigInteger sumOfBigInteger(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.util.SortedSet toSortedSet(java.lang.Iterable)
+    public static final java.util.SortedSet toSortedSet(java.lang.Iterable,java.util.Comparator)
+kotlin.collections.CollectionsKt___CollectionsKt$asSequence$$inlined$Sequence$1
+kotlin.collections.CollectionsKt___CollectionsKt$elementAt$1
+kotlin.collections.CollectionsKt___CollectionsKt$groupingBy$1
+kotlin.collections.CollectionsKt___CollectionsKt$withIndex$1
+kotlin.collections.CollectionsKt___CollectionsKt:
+    public void <init>()
+    public static final boolean all(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final boolean any(java.lang.Iterable)
+    public static final boolean any(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final java.lang.Iterable asIterable(java.lang.Iterable)
+    public static final kotlin.sequences.Sequence asSequence(java.lang.Iterable)
+    public static final java.util.Map associate(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.util.Map associateBy(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.util.Map associateBy(java.lang.Iterable,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1)
+    public static final java.util.Map associateByTo(java.lang.Iterable,java.util.Map,kotlin.jvm.functions.Function1)
+    public static final java.util.Map associateByTo(java.lang.Iterable,java.util.Map,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1)
+    public static final java.util.Map associateTo(java.lang.Iterable,java.util.Map,kotlin.jvm.functions.Function1)
+    public static final java.util.Map associateWith(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.util.Map associateWithTo(java.lang.Iterable,java.util.Map,kotlin.jvm.functions.Function1)
+    public static final double averageOfByte(java.lang.Iterable)
+    public static final double averageOfDouble(java.lang.Iterable)
+    public static final double averageOfFloat(java.lang.Iterable)
+    public static final double averageOfInt(java.lang.Iterable)
+    public static final double averageOfLong(java.lang.Iterable)
+    public static final double averageOfShort(java.lang.Iterable)
+    public static final java.util.List chunked(java.lang.Iterable,int)
+    public static final java.util.List chunked(java.lang.Iterable,int,kotlin.jvm.functions.Function1)
+    private static final java.lang.Object component1(java.util.List)
+    private static final java.lang.Object component2(java.util.List)
+    private static final java.lang.Object component3(java.util.List)
+    private static final java.lang.Object component4(java.util.List)
+    private static final java.lang.Object component5(java.util.List)
+    public static final boolean contains(java.lang.Iterable,java.lang.Object)
+    public static final int count(java.lang.Iterable)
+    public static final int count(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final int count(java.util.Collection)
+    public static final java.util.List distinct(java.lang.Iterable)
+    public static final java.util.List distinctBy(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.util.List drop(java.lang.Iterable,int)
+    public static final java.util.List dropLast(java.util.List,int)
+    public static final java.util.List dropLastWhile(java.util.List,kotlin.jvm.functions.Function1)
+    public static final java.util.List dropWhile(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.lang.Object elementAt(java.lang.Iterable,int)
+    private static final java.lang.Object elementAt(java.util.List,int)
+    public static final java.lang.Object elementAtOrElse(java.lang.Iterable,int,kotlin.jvm.functions.Function1)
+    private static final java.lang.Object elementAtOrElse(java.util.List,int,kotlin.jvm.functions.Function1)
+    public static final java.lang.Object elementAtOrNull(java.lang.Iterable,int)
+    private static final java.lang.Object elementAtOrNull(java.util.List,int)
+    public static final java.util.List filter(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.util.List filterIndexed(java.lang.Iterable,kotlin.jvm.functions.Function2)
+    public static final java.util.Collection filterIndexedTo(java.lang.Iterable,java.util.Collection,kotlin.jvm.functions.Function2)
+    public static final synthetic java.util.List filterIsInstance(java.lang.Iterable)
+    public static final synthetic java.util.Collection filterIsInstanceTo(java.lang.Iterable,java.util.Collection)
+    public static final java.util.List filterNot(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.util.List filterNotNull(java.lang.Iterable)
+    public static final java.util.Collection filterNotNullTo(java.lang.Iterable,java.util.Collection)
+    public static final java.util.Collection filterNotTo(java.lang.Iterable,java.util.Collection,kotlin.jvm.functions.Function1)
+    public static final java.util.Collection filterTo(java.lang.Iterable,java.util.Collection,kotlin.jvm.functions.Function1)
+    private static final java.lang.Object find(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final java.lang.Object findLast(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final java.lang.Object findLast(java.util.List,kotlin.jvm.functions.Function1)
+    public static final java.lang.Object first(java.lang.Iterable)
+    public static final java.lang.Object first(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.lang.Object first(java.util.List)
+    private static final java.lang.Object firstNotNullOf(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final java.lang.Object firstNotNullOfOrNull(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.lang.Object firstOrNull(java.lang.Iterable)
+    public static final java.lang.Object firstOrNull(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.lang.Object firstOrNull(java.util.List)
+    public static final java.util.List flatMap(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final java.util.List flatMapIndexedIterable(java.lang.Iterable,kotlin.jvm.functions.Function2)
+    private static final java.util.Collection flatMapIndexedIterableTo(java.lang.Iterable,java.util.Collection,kotlin.jvm.functions.Function2)
+    private static final java.util.List flatMapIndexedSequence(java.lang.Iterable,kotlin.jvm.functions.Function2)
+    private static final java.util.Collection flatMapIndexedSequenceTo(java.lang.Iterable,java.util.Collection,kotlin.jvm.functions.Function2)
+    public static final java.util.List flatMapSequence(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.util.Collection flatMapSequenceTo(java.lang.Iterable,java.util.Collection,kotlin.jvm.functions.Function1)
+    public static final java.util.Collection flatMapTo(java.lang.Iterable,java.util.Collection,kotlin.jvm.functions.Function1)
+    public static final java.lang.Object fold(java.lang.Iterable,java.lang.Object,kotlin.jvm.functions.Function2)
+    public static final java.lang.Object foldIndexed(java.lang.Iterable,java.lang.Object,kotlin.jvm.functions.Function3)
+    public static final java.lang.Object foldRight(java.util.List,java.lang.Object,kotlin.jvm.functions.Function2)
+    public static final java.lang.Object foldRightIndexed(java.util.List,java.lang.Object,kotlin.jvm.functions.Function3)
+    public static final void forEach(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final void forEachIndexed(java.lang.Iterable,kotlin.jvm.functions.Function2)
+    private static final java.lang.Object getOrElse(java.util.List,int,kotlin.jvm.functions.Function1)
+    public static final java.lang.Object getOrNull(java.util.List,int)
+    public static final java.util.Map groupBy(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.util.Map groupBy(java.lang.Iterable,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1)
+    public static final java.util.Map groupByTo(java.lang.Iterable,java.util.Map,kotlin.jvm.functions.Function1)
+    public static final java.util.Map groupByTo(java.lang.Iterable,java.util.Map,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1)
+    public static final kotlin.collections.Grouping groupingBy(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final int indexOf(java.lang.Iterable,java.lang.Object)
+    public static final int indexOf(java.util.List,java.lang.Object)
+    public static final int indexOfFirst(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final int indexOfFirst(java.util.List,kotlin.jvm.functions.Function1)
+    public static final int indexOfLast(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final int indexOfLast(java.util.List,kotlin.jvm.functions.Function1)
+    public static final java.util.Set intersect(java.lang.Iterable,java.lang.Iterable)
+    public static final java.lang.Appendable joinTo(java.lang.Iterable,java.lang.Appendable,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,int,java.lang.CharSequence,kotlin.jvm.functions.Function1)
+    public static synthetic java.lang.Appendable joinTo$default(java.lang.Iterable,java.lang.Appendable,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,int,java.lang.CharSequence,kotlin.jvm.functions.Function1,int,java.lang.Object)
+    public static final java.lang.String joinToString(java.lang.Iterable,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,int,java.lang.CharSequence,kotlin.jvm.functions.Function1)
+    public static synthetic java.lang.String joinToString$default(java.lang.Iterable,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,int,java.lang.CharSequence,kotlin.jvm.functions.Function1,int,java.lang.Object)
+    public static final java.lang.Object last(java.lang.Iterable)
+    public static final java.lang.Object last(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.lang.Object last(java.util.List)
+    public static final java.lang.Object last(java.util.List,kotlin.jvm.functions.Function1)
+    public static final int lastIndexOf(java.lang.Iterable,java.lang.Object)
+    public static final int lastIndexOf(java.util.List,java.lang.Object)
+    public static final java.lang.Object lastOrNull(java.lang.Iterable)
+    public static final java.lang.Object lastOrNull(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.lang.Object lastOrNull(java.util.List)
+    public static final java.lang.Object lastOrNull(java.util.List,kotlin.jvm.functions.Function1)
+    public static final java.util.List map(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.util.List mapIndexed(java.lang.Iterable,kotlin.jvm.functions.Function2)
+    public static final java.util.List mapIndexedNotNull(java.lang.Iterable,kotlin.jvm.functions.Function2)
+    public static final java.util.Collection mapIndexedNotNullTo(java.lang.Iterable,java.util.Collection,kotlin.jvm.functions.Function2)
+    public static final java.util.Collection mapIndexedTo(java.lang.Iterable,java.util.Collection,kotlin.jvm.functions.Function2)
+    public static final java.util.List mapNotNull(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.util.Collection mapNotNullTo(java.lang.Iterable,java.util.Collection,kotlin.jvm.functions.Function1)
+    public static final java.util.Collection mapTo(java.lang.Iterable,java.util.Collection,kotlin.jvm.functions.Function1)
+    public static final synthetic java.lang.Comparable max(java.lang.Iterable)
+    public static final synthetic java.lang.Double max(java.lang.Iterable)
+    public static final synthetic java.lang.Float max(java.lang.Iterable)
+    public static final synthetic java.lang.Object maxBy(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.lang.Object maxByOrNull(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final double maxOf(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final float maxOf(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final java.lang.Comparable maxOf(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final java.lang.Comparable maxOfOrNull(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final java.lang.Double maxOfOrNull(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final java.lang.Float maxOfOrNull(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final java.lang.Object maxOfWith(java.lang.Iterable,java.util.Comparator,kotlin.jvm.functions.Function1)
+    private static final java.lang.Object maxOfWithOrNull(java.lang.Iterable,java.util.Comparator,kotlin.jvm.functions.Function1)
+    public static final java.lang.Comparable maxOrNull(java.lang.Iterable)
+    public static final java.lang.Double maxOrNull(java.lang.Iterable)
+    public static final java.lang.Float maxOrNull(java.lang.Iterable)
+    public static final synthetic java.lang.Object maxWith(java.lang.Iterable,java.util.Comparator)
+    public static final java.lang.Object maxWithOrNull(java.lang.Iterable,java.util.Comparator)
+    public static final synthetic java.lang.Comparable min(java.lang.Iterable)
+    public static final synthetic java.lang.Double min(java.lang.Iterable)
+    public static final synthetic java.lang.Float min(java.lang.Iterable)
+    public static final synthetic java.lang.Object minBy(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.lang.Object minByOrNull(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final double minOf(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final float minOf(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final java.lang.Comparable minOf(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final java.lang.Comparable minOfOrNull(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final java.lang.Double minOfOrNull(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final java.lang.Float minOfOrNull(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final java.lang.Object minOfWith(java.lang.Iterable,java.util.Comparator,kotlin.jvm.functions.Function1)
+    private static final java.lang.Object minOfWithOrNull(java.lang.Iterable,java.util.Comparator,kotlin.jvm.functions.Function1)
+    public static final java.lang.Comparable minOrNull(java.lang.Iterable)
+    public static final java.lang.Double minOrNull(java.lang.Iterable)
+    public static final java.lang.Float minOrNull(java.lang.Iterable)
+    public static final synthetic java.lang.Object minWith(java.lang.Iterable,java.util.Comparator)
+    public static final java.lang.Object minWithOrNull(java.lang.Iterable,java.util.Comparator)
+    public static final java.util.List minus(java.lang.Iterable,java.lang.Iterable)
+    public static final java.util.List minus(java.lang.Iterable,java.lang.Object)
+    public static final java.util.List minus(java.lang.Iterable,kotlin.sequences.Sequence)
+    public static final java.util.List minus(java.lang.Iterable,java.lang.Object[])
+    private static final java.util.List minusElement(java.lang.Iterable,java.lang.Object)
+    public static final boolean none(java.lang.Iterable)
+    public static final boolean none(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.lang.Iterable onEach(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.lang.Iterable onEachIndexed(java.lang.Iterable,kotlin.jvm.functions.Function2)
+    public static final kotlin.Pair partition(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.util.List plus(java.lang.Iterable,java.lang.Iterable)
+    public static final java.util.List plus(java.lang.Iterable,java.lang.Object)
+    public static final java.util.List plus(java.lang.Iterable,kotlin.sequences.Sequence)
+    public static final java.util.List plus(java.lang.Iterable,java.lang.Object[])
+    public static final java.util.List plus(java.util.Collection,java.lang.Iterable)
+    public static final java.util.List plus(java.util.Collection,java.lang.Object)
+    public static final java.util.List plus(java.util.Collection,kotlin.sequences.Sequence)
+    public static final java.util.List plus(java.util.Collection,java.lang.Object[])
+    private static final java.util.List plusElement(java.lang.Iterable,java.lang.Object)
+    private static final java.util.List plusElement(java.util.Collection,java.lang.Object)
+    private static final java.lang.Object random(java.util.Collection)
+    public static final java.lang.Object random(java.util.Collection,kotlin.random.Random)
+    private static final java.lang.Object randomOrNull(java.util.Collection)
+    public static final java.lang.Object randomOrNull(java.util.Collection,kotlin.random.Random)
+    public static final java.lang.Object reduce(java.lang.Iterable,kotlin.jvm.functions.Function2)
+    public static final java.lang.Object reduceIndexed(java.lang.Iterable,kotlin.jvm.functions.Function3)
+    public static final java.lang.Object reduceIndexedOrNull(java.lang.Iterable,kotlin.jvm.functions.Function3)
+    public static final java.lang.Object reduceOrNull(java.lang.Iterable,kotlin.jvm.functions.Function2)
+    public static final java.lang.Object reduceRight(java.util.List,kotlin.jvm.functions.Function2)
+    public static final java.lang.Object reduceRightIndexed(java.util.List,kotlin.jvm.functions.Function3)
+    public static final java.lang.Object reduceRightIndexedOrNull(java.util.List,kotlin.jvm.functions.Function3)
+    public static final java.lang.Object reduceRightOrNull(java.util.List,kotlin.jvm.functions.Function2)
+    public static final java.lang.Iterable requireNoNulls(java.lang.Iterable)
+    public static final java.util.List requireNoNulls(java.util.List)
+    public static final java.util.List reversed(java.lang.Iterable)
+    public static final java.util.List runningFold(java.lang.Iterable,java.lang.Object,kotlin.jvm.functions.Function2)
+    public static final java.util.List runningFoldIndexed(java.lang.Iterable,java.lang.Object,kotlin.jvm.functions.Function3)
+    public static final java.util.List runningReduce(java.lang.Iterable,kotlin.jvm.functions.Function2)
+    public static final java.util.List runningReduceIndexed(java.lang.Iterable,kotlin.jvm.functions.Function3)
+    public static final java.util.List scan(java.lang.Iterable,java.lang.Object,kotlin.jvm.functions.Function2)
+    public static final java.util.List scanIndexed(java.lang.Iterable,java.lang.Object,kotlin.jvm.functions.Function3)
+    public static final void shuffle(java.util.List,kotlin.random.Random)
+    public static final java.lang.Object single(java.lang.Iterable)
+    public static final java.lang.Object single(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.lang.Object single(java.util.List)
+    public static final java.lang.Object singleOrNull(java.lang.Iterable)
+    public static final java.lang.Object singleOrNull(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.lang.Object singleOrNull(java.util.List)
+    public static final java.util.List slice(java.util.List,java.lang.Iterable)
+    public static final java.util.List slice(java.util.List,kotlin.ranges.IntRange)
+    public static final void sortBy(java.util.List,kotlin.jvm.functions.Function1)
+    public static final void sortByDescending(java.util.List,kotlin.jvm.functions.Function1)
+    public static final void sortDescending(java.util.List)
+    public static final java.util.List sorted(java.lang.Iterable)
+    public static final java.util.List sortedBy(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.util.List sortedByDescending(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.util.List sortedDescending(java.lang.Iterable)
+    public static final java.util.List sortedWith(java.lang.Iterable,java.util.Comparator)
+    public static final java.util.Set subtract(java.lang.Iterable,java.lang.Iterable)
+    public static final int sumBy(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final double sumByDouble(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final int sumOfByte(java.lang.Iterable)
+    public static final double sumOfDouble(java.lang.Iterable)
+    private static final double sumOfDouble(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final float sumOfFloat(java.lang.Iterable)
+    public static final int sumOfInt(java.lang.Iterable)
+    private static final int sumOfInt(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final long sumOfLong(java.lang.Iterable)
+    private static final long sumOfLong(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final int sumOfShort(java.lang.Iterable)
+    private static final int sumOfUInt(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    private static final long sumOfULong(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final java.util.List take(java.lang.Iterable,int)
+    public static final java.util.List takeLast(java.util.List,int)
+    public static final java.util.List takeLastWhile(java.util.List,kotlin.jvm.functions.Function1)
+    public static final java.util.List takeWhile(java.lang.Iterable,kotlin.jvm.functions.Function1)
+    public static final boolean[] toBooleanArray(java.util.Collection)
+    public static final byte[] toByteArray(java.util.Collection)
+    public static final char[] toCharArray(java.util.Collection)
+    public static final java.util.Collection toCollection(java.lang.Iterable,java.util.Collection)
+    public static final double[] toDoubleArray(java.util.Collection)
+    public static final float[] toFloatArray(java.util.Collection)
+    public static final java.util.HashSet toHashSet(java.lang.Iterable)
+    public static final int[] toIntArray(java.util.Collection)
+    public static final java.util.List toList(java.lang.Iterable)
+    public static final long[] toLongArray(java.util.Collection)
+    public static final java.util.List toMutableList(java.lang.Iterable)
+    public static final java.util.List toMutableList(java.util.Collection)
+    public static final java.util.Set toMutableSet(java.lang.Iterable)
+    public static final java.util.Set toSet(java.lang.Iterable)
+    public static final short[] toShortArray(java.util.Collection)
+    public static final java.util.Set union(java.lang.Iterable,java.lang.Iterable)
+    public static final java.util.List windowed(java.lang.Iterable,int,int,boolean)
+    public static final java.util.List windowed(java.lang.Iterable,int,int,boolean,kotlin.jvm.functions.Function1)
+    public static synthetic java.util.List windowed$default(java.lang.Iterable,int,int,boolean,int,java.lang.Object)
+    public static synthetic java.util.List windowed$default(java.lang.Iterable,int,int,boolean,kotlin.jvm.functions.Function1,int,java.lang.Object)
+    public static final java.lang.Iterable withIndex(java.lang.Iterable)
+    public static final java.util.List zip(java.lang.Iterable,java.lang.Iterable)
+    public static final java.util.List zip(java.lang.Iterable,java.lang.Iterable,kotlin.jvm.functions.Function2)
+    public static final java.util.List zip(java.lang.Iterable,java.lang.Object[])
+    public static final java.util.List zip(java.lang.Iterable,java.lang.Object[],kotlin.jvm.functions.Function2)
+    public static final java.util.List zipWithNext(java.lang.Iterable)
+    public static final java.util.List zipWithNext(java.lang.Iterable,kotlin.jvm.functions.Function2)
+kotlin.collections.DoubleIterator
+kotlin.collections.EmptyIterator
+kotlin.collections.EmptyList
+kotlin.collections.EmptyMap
+kotlin.collections.EmptySet
+kotlin.collections.FloatIterator
+kotlin.collections.Grouping
+kotlin.collections.GroupingKt
+kotlin.collections.GroupingKt__GroupingJVMKt
+kotlin.collections.GroupingKt__GroupingKt
+kotlin.collections.IndexedValue
+kotlin.collections.IndexingIterable
+kotlin.collections.IndexingIterator
+kotlin.collections.IntIterator
+kotlin.collections.LongIterator
+kotlin.collections.MapAccessorsKt
+kotlin.collections.MapWithDefault
+kotlin.collections.MapWithDefaultImpl
+kotlin.collections.MapsKt
+kotlin.collections.MapsKt__MapWithDefaultKt
+kotlin.collections.MapsKt__MapsJVMKt
+kotlin.collections.MapsKt__MapsKt
+kotlin.collections.MapsKt___MapsKt
+kotlin.collections.MovingSubList
+kotlin.collections.MutableMapWithDefault
+kotlin.collections.MutableMapWithDefaultImpl
+kotlin.collections.ReversedList
+kotlin.collections.ReversedListReadOnly
+kotlin.collections.RingBuffer$iterator$1
+kotlin.collections.RingBuffer
+kotlin.collections.SetsKt
+kotlin.collections.SetsKt__SetsJVMKt
+kotlin.collections.SetsKt__SetsKt
+kotlin.collections.SetsKt___SetsKt
+kotlin.collections.ShortIterator
+kotlin.collections.SlidingWindowKt$windowedIterator$1
+kotlin.collections.SlidingWindowKt$windowedSequence$$inlined$Sequence$1
+kotlin.collections.SlidingWindowKt
+kotlin.collections.State
+kotlin.collections.TypeAliasesKt
+kotlin.collections.UArraySortingKt
+kotlin.collections.UByteIterator
+kotlin.collections.UCollectionsKt
+kotlin.collections.UCollectionsKt___UCollectionsKt
+kotlin.collections.UIntIterator
+kotlin.collections.ULongIterator
+kotlin.collections.UShortIterator
+kotlin.collections.builders.AbstractMapBuilderEntrySet
+kotlin.collections.builders.ListBuilder$Itr
+kotlin.collections.builders.ListBuilder
+kotlin.collections.builders.ListBuilderKt
+kotlin.collections.builders.MapBuilder$Companion
+kotlin.collections.builders.MapBuilder$EntriesItr
+kotlin.collections.builders.MapBuilder$EntryRef
+kotlin.collections.builders.MapBuilder$Itr
+kotlin.collections.builders.MapBuilder$KeysItr
+kotlin.collections.builders.MapBuilder$ValuesItr
+kotlin.collections.builders.MapBuilder
+kotlin.collections.builders.MapBuilderEntries
+kotlin.collections.builders.MapBuilderKeys
+kotlin.collections.builders.MapBuilderValues
+kotlin.collections.builders.SerializedCollection$Companion
+kotlin.collections.builders.SerializedCollection
+kotlin.collections.builders.SerializedMap$Companion
+kotlin.collections.builders.SerializedMap
+kotlin.collections.builders.SetBuilder
+kotlin.collections.jdk8.CollectionsJDK8Kt
+kotlin.collections.unsigned.UArraysKt
+kotlin.collections.unsigned.UArraysKt___UArraysJvmKt$asList$1
+kotlin.collections.unsigned.UArraysKt___UArraysJvmKt$asList$2
+kotlin.collections.unsigned.UArraysKt___UArraysJvmKt$asList$3
+kotlin.collections.unsigned.UArraysKt___UArraysJvmKt$asList$4
+kotlin.collections.unsigned.UArraysKt___UArraysJvmKt
+kotlin.collections.unsigned.UArraysKt___UArraysKt$withIndex$1
+kotlin.collections.unsigned.UArraysKt___UArraysKt$withIndex$2
+kotlin.collections.unsigned.UArraysKt___UArraysKt$withIndex$3
+kotlin.collections.unsigned.UArraysKt___UArraysKt$withIndex$4
+kotlin.collections.unsigned.UArraysKt___UArraysKt
+kotlin.comparisons.ComparisonsKt
+kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareBy$1
+kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareBy$2
+kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareBy$3
+kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareByDescending$1
+kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareByDescending$2
+kotlin.comparisons.ComparisonsKt__ComparisonsKt$nullsFirst$1
+kotlin.comparisons.ComparisonsKt__ComparisonsKt$nullsLast$1
+kotlin.comparisons.ComparisonsKt__ComparisonsKt$then$1
+kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenBy$1
+kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenBy$2
+kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenByDescending$1
+kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenByDescending$2
+kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenComparator$1
+kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenDescending$1
+kotlin.comparisons.ComparisonsKt__ComparisonsKt
+kotlin.comparisons.ComparisonsKt___ComparisonsJvmKt
+kotlin.comparisons.ComparisonsKt___ComparisonsKt
+kotlin.comparisons.NaturalOrderComparator
+kotlin.comparisons.ReverseOrderComparator
+kotlin.comparisons.ReversedComparator
+kotlin.comparisons.UComparisonsKt
+kotlin.comparisons.UComparisonsKt___UComparisonsKt
+kotlin.concurrent.LocksKt
+kotlin.concurrent.ThreadsKt:
+    private static final java.lang.Object getOrSet(java.lang.ThreadLocal,kotlin.jvm.functions.Function0)
+kotlin.concurrent.TimersKt$timerTask$1
+kotlin.concurrent.TimersKt
+kotlin.contracts.CallsInPlace
+kotlin.contracts.ConditionalEffect
+kotlin.contracts.ContractBuilder$DefaultImpls
+kotlin.contracts.ContractBuilder
+kotlin.contracts.ContractBuilderKt
+kotlin.contracts.Effect
+kotlin.contracts.ExperimentalContracts
+kotlin.contracts.InvocationKind
+kotlin.contracts.Returns
+kotlin.contracts.ReturnsNotNull
+kotlin.contracts.SimpleEffect
+kotlin.coroutines.AbstractCoroutineContextElement
+kotlin.coroutines.AbstractCoroutineContextKey
+kotlin.coroutines.CombinedContext$Serialized$Companion
+kotlin.coroutines.CombinedContext$Serialized
+kotlin.coroutines.CombinedContext$toString$1
+kotlin.coroutines.CombinedContext$writeReplace$1
+kotlin.coroutines.CombinedContext
+kotlin.coroutines.Continuation
+kotlin.coroutines.ContinuationInterceptor$DefaultImpls
+kotlin.coroutines.ContinuationInterceptor$Key
+kotlin.coroutines.ContinuationInterceptor
+kotlin.coroutines.ContinuationKt$Continuation$1
+kotlin.coroutines.ContinuationKt
+kotlin.coroutines.CoroutineContext$DefaultImpls
+kotlin.coroutines.CoroutineContext$Element$DefaultImpls
+kotlin.coroutines.CoroutineContext$Element
+kotlin.coroutines.CoroutineContext$Key
+kotlin.coroutines.CoroutineContext$plus$1
+kotlin.coroutines.CoroutineContext
+kotlin.coroutines.CoroutineContextImplKt
+kotlin.coroutines.EmptyCoroutineContext
+kotlin.coroutines.RestrictsSuspension
+kotlin.coroutines.SafeContinuation$Companion
+kotlin.coroutines.SafeContinuation
+kotlin.coroutines.cancellation.CancellationExceptionKt
+kotlin.coroutines.intrinsics.CoroutineSingletons
+kotlin.coroutines.intrinsics.IntrinsicsKt
+kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineFromSuspendFunction$1
+kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineFromSuspendFunction$2
+kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$1
+kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$2
+kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$3
+kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$4
+kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt
+kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsKt
+kotlin.coroutines.jvm.internal.BaseContinuationImpl
+kotlin.coroutines.jvm.internal.Boxing
+kotlin.coroutines.jvm.internal.CompletedContinuation
+kotlin.coroutines.jvm.internal.ContinuationImpl
+kotlin.coroutines.jvm.internal.CoroutineStackFrame
+kotlin.coroutines.jvm.internal.DebugMetadata
+kotlin.coroutines.jvm.internal.DebugMetadataKt
+kotlin.coroutines.jvm.internal.DebugProbesKt
+kotlin.coroutines.jvm.internal.ModuleNameRetriever$Cache
+kotlin.coroutines.jvm.internal.ModuleNameRetriever
+kotlin.coroutines.jvm.internal.RestrictedContinuationImpl
+kotlin.coroutines.jvm.internal.RestrictedSuspendLambda
+kotlin.coroutines.jvm.internal.RunSuspend
+kotlin.coroutines.jvm.internal.RunSuspendKt
+kotlin.coroutines.jvm.internal.SuspendFunction
+kotlin.coroutines.jvm.internal.SuspendLambda
+kotlin.experimental.BitwiseOperationsKt
+kotlin.experimental.ExperimentalTypeInference
+kotlin.internal.AccessibleLateinitPropertyLiteral
+kotlin.internal.ContractsDsl
+kotlin.internal.DynamicExtension
+kotlin.internal.Exact
+kotlin.internal.HidesMembers
+kotlin.internal.InlineOnly
+kotlin.internal.LowPriorityInOverloadResolution
+kotlin.internal.NoInfer
+kotlin.internal.OnlyInputTypes
+kotlin.internal.PlatformDependent
+kotlin.internal.PlatformImplementations$ReflectThrowable
+kotlin.internal.PlatformImplementations
+kotlin.internal.PlatformImplementationsKt
+kotlin.internal.ProgressionUtilKt
+kotlin.internal.PureReifiable
+kotlin.internal.RequireKotlin$Container
+kotlin.internal.RequireKotlin
+kotlin.internal.RequireKotlinVersionKind
+kotlin.internal.UProgressionUtilKt
+kotlin.internal.jdk7.JDK7PlatformImplementations
+kotlin.internal.jdk8.JDK8PlatformImplementations
+kotlin.io.AccessDeniedException
+kotlin.io.ByteStreamsKt$iterator$1
+kotlin.io.ByteStreamsKt
+kotlin.io.CloseableKt
+kotlin.io.ConsoleKt
+kotlin.io.ConstantsKt
+kotlin.io.ExceptionsKt
+kotlin.io.ExposingBufferByteArrayOutputStream
+kotlin.io.FileAlreadyExistsException
+kotlin.io.FilePathComponents
+kotlin.io.FileSystemException
+kotlin.io.FileTreeWalk$DirectoryState
+kotlin.io.FileTreeWalk$FileTreeWalkIterator$BottomUpDirectoryState
+kotlin.io.FileTreeWalk$FileTreeWalkIterator$SingleFileState
+kotlin.io.FileTreeWalk$FileTreeWalkIterator$TopDownDirectoryState
+kotlin.io.FileTreeWalk$FileTreeWalkIterator$WhenMappings
+kotlin.io.FileTreeWalk$FileTreeWalkIterator
+kotlin.io.FileTreeWalk$WalkState
+kotlin.io.FileTreeWalk
+kotlin.io.FileWalkDirection
+kotlin.io.FilesKt
+kotlin.io.FilesKt__FilePathComponentsKt
+kotlin.io.FilesKt__FileReadWriteKt$readLines$1
+kotlin.io.FilesKt__FileReadWriteKt
+kotlin.io.FilesKt__FileTreeWalkKt
+kotlin.io.FilesKt__UtilsKt$copyRecursively$1
+kotlin.io.FilesKt__UtilsKt$copyRecursively$2
+kotlin.io.FilesKt__UtilsKt
+kotlin.io.LineReader
+kotlin.io.LinesSequence$iterator$1
+kotlin.io.LinesSequence
+kotlin.io.NoSuchFileException
+kotlin.io.OnErrorAction
+kotlin.io.ReadAfterEOFException
+kotlin.io.SerializableKt
+kotlin.io.TerminateException
+kotlin.io.TextStreamsKt$readLines$1
+kotlin.io.TextStreamsKt
+kotlin.io.path.ExperimentalPathApi
+kotlin.io.path.PathRelativizer
+kotlin.io.path.PathsKt
+kotlin.io.path.PathsKt__PathReadWriteKt
+kotlin.io.path.PathsKt__PathUtilsKt
+kotlin.jdk7.AutoCloseableKt
+kotlin.js.ExperimentalJsExport
+kotlin.jvm.JvmClassMappingKt
+kotlin.jvm.JvmDefault
+kotlin.jvm.JvmDefaultWithoutCompatibility
+kotlin.jvm.JvmField
+kotlin.jvm.JvmInline
+kotlin.jvm.JvmMultifileClass
+kotlin.jvm.JvmName
+kotlin.jvm.JvmOverloads
+kotlin.jvm.JvmPackageName
+kotlin.jvm.JvmRecord
+kotlin.jvm.JvmStatic
+kotlin.jvm.JvmSuppressWildcards
+kotlin.jvm.JvmSynthetic
+kotlin.jvm.JvmWildcard
+kotlin.jvm.KotlinReflectionNotSupportedError
+kotlin.jvm.PurelyImplements
+kotlin.jvm.Strictfp
+kotlin.jvm.Synchronized
+kotlin.jvm.Throws
+kotlin.jvm.Transient
+kotlin.jvm.Volatile
+kotlin.jvm.functions.Function10
+kotlin.jvm.functions.Function11
+kotlin.jvm.functions.Function12
+kotlin.jvm.functions.Function13
+kotlin.jvm.functions.Function14
+kotlin.jvm.functions.Function15
+kotlin.jvm.functions.Function16
+kotlin.jvm.functions.Function17
+kotlin.jvm.functions.Function18
+kotlin.jvm.functions.Function19
+kotlin.jvm.functions.Function1
+kotlin.jvm.functions.Function20
+kotlin.jvm.functions.Function21
+kotlin.jvm.functions.Function22
+kotlin.jvm.functions.Function2
+kotlin.jvm.functions.Function3
+kotlin.jvm.functions.Function4
+kotlin.jvm.functions.Function5
+kotlin.jvm.functions.Function6
+kotlin.jvm.functions.Function7
+kotlin.jvm.functions.Function8
+kotlin.jvm.functions.Function9
+kotlin.jvm.functions.FunctionN
+kotlin.jvm.internal.AdaptedFunctionReference
+kotlin.jvm.internal.ArrayBooleanIterator
+kotlin.jvm.internal.ArrayByteIterator
+kotlin.jvm.internal.ArrayCharIterator
+kotlin.jvm.internal.ArrayDoubleIterator
+kotlin.jvm.internal.ArrayFloatIterator
+kotlin.jvm.internal.ArrayIntIterator
+kotlin.jvm.internal.ArrayIterator
+kotlin.jvm.internal.ArrayIteratorKt
+kotlin.jvm.internal.ArrayIteratorsKt
+kotlin.jvm.internal.ArrayLongIterator
+kotlin.jvm.internal.ArrayShortIterator
+kotlin.jvm.internal.BooleanCompanionObject
+kotlin.jvm.internal.BooleanSpreadBuilder
+kotlin.jvm.internal.ByteCompanionObject
+kotlin.jvm.internal.ByteSpreadBuilder
+kotlin.jvm.internal.CallableReference$NoReceiver
+kotlin.jvm.internal.CallableReference
+kotlin.jvm.internal.CharCompanionObject
+kotlin.jvm.internal.CharSpreadBuilder
+kotlin.jvm.internal.ClassBasedDeclarationContainer
+kotlin.jvm.internal.ClassReference$Companion
+kotlin.jvm.internal.ClassReference
+kotlin.jvm.internal.CollectionToArray
+kotlin.jvm.internal.DefaultConstructorMarker:
+    private void <init>()
+kotlin.jvm.internal.DoubleCompanionObject
+kotlin.jvm.internal.DoubleSpreadBuilder
+kotlin.jvm.internal.EnumCompanionObject
+kotlin.jvm.internal.FloatCompanionObject
+kotlin.jvm.internal.FloatSpreadBuilder
+kotlin.jvm.internal.FunctionAdapter
+kotlin.jvm.internal.FunctionBase:
+    public abstract int getArity()
+kotlin.jvm.internal.FunctionImpl
+kotlin.jvm.internal.FunctionReference
+kotlin.jvm.internal.FunctionReferenceImpl
+kotlin.jvm.internal.InlineMarker
+kotlin.jvm.internal.IntCompanionObject
+kotlin.jvm.internal.IntSpreadBuilder
+kotlin.jvm.internal.Intrinsics$Kotlin
+kotlin.jvm.internal.Intrinsics:
+    private void <init>()
+    public static boolean areEqual(double,java.lang.Double)
+    public static boolean areEqual(float,java.lang.Float)
+    public static boolean areEqual(java.lang.Double,double)
+    public static boolean areEqual(java.lang.Double,java.lang.Double)
+    public static boolean areEqual(java.lang.Float,float)
+    public static boolean areEqual(java.lang.Float,java.lang.Float)
+    public static void checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)
+    public static void checkFieldIsNotNull(java.lang.Object,java.lang.String)
+    public static void checkFieldIsNotNull(java.lang.Object,java.lang.String,java.lang.String)
+    public static void checkHasClass(java.lang.String)
+    public static void checkHasClass(java.lang.String,java.lang.String)
+    public static void checkNotNull(java.lang.Object)
+    public static void checkNotNull(java.lang.Object,java.lang.String)
+    public static void checkParameterIsNotNull(java.lang.Object,java.lang.String)
+    public static void checkReturnedValueIsNotNull(java.lang.Object,java.lang.String)
+    public static void checkReturnedValueIsNotNull(java.lang.Object,java.lang.String,java.lang.String)
+    public static int compare(int,int)
+    public static int compare(long,long)
+    public static void needClassReification()
+    public static void needClassReification(java.lang.String)
+    public static void reifiedOperationMarker(int,java.lang.String)
+    public static void reifiedOperationMarker(int,java.lang.String,java.lang.String)
+    public static void throwAssert()
+    public static void throwAssert(java.lang.String)
+    public static void throwIllegalArgument()
+    public static void throwIllegalArgument(java.lang.String)
+    public static void throwIllegalState()
+    public static void throwIllegalState(java.lang.String)
+    public static void throwJavaNpe()
+    public static void throwJavaNpe(java.lang.String)
+    public static void throwNpe()
+    public static void throwNpe(java.lang.String)
+    private static void throwParameterIsNullIAE(java.lang.String)
+    public static void throwUndefinedForReified()
+    public static void throwUndefinedForReified(java.lang.String)
+    public static void throwUninitializedProperty(java.lang.String)
+    public static void throwUninitializedPropertyAccessException(java.lang.String)
+kotlin.jvm.internal.KTypeBase
+kotlin.jvm.internal.Lambda:
+    public int getArity()
+kotlin.jvm.internal.LocalVariableReference
+kotlin.jvm.internal.LocalVariableReferencesKt
+kotlin.jvm.internal.LongCompanionObject
+kotlin.jvm.internal.LongSpreadBuilder
+kotlin.jvm.internal.MagicApiIntrinsics
+kotlin.jvm.internal.MutableLocalVariableReference
+kotlin.jvm.internal.MutablePropertyReference0
+kotlin.jvm.internal.MutablePropertyReference0Impl
+kotlin.jvm.internal.MutablePropertyReference1
+kotlin.jvm.internal.MutablePropertyReference1Impl
+kotlin.jvm.internal.MutablePropertyReference2
+kotlin.jvm.internal.MutablePropertyReference2Impl
+kotlin.jvm.internal.MutablePropertyReference
+kotlin.jvm.internal.PackageReference
+kotlin.jvm.internal.PrimitiveSpreadBuilder
+kotlin.jvm.internal.PropertyReference0
+kotlin.jvm.internal.PropertyReference0Impl
+kotlin.jvm.internal.PropertyReference1
+kotlin.jvm.internal.PropertyReference1Impl
+kotlin.jvm.internal.PropertyReference2
+kotlin.jvm.internal.PropertyReference2Impl
+kotlin.jvm.internal.PropertyReference
+kotlin.jvm.internal.Ref$BooleanRef
+kotlin.jvm.internal.Ref$ByteRef
+kotlin.jvm.internal.Ref$CharRef
+kotlin.jvm.internal.Ref$DoubleRef
+kotlin.jvm.internal.Ref$FloatRef
+kotlin.jvm.internal.Ref$IntRef
+kotlin.jvm.internal.Ref$LongRef
+kotlin.jvm.internal.Ref$ObjectRef
+kotlin.jvm.internal.Ref$ShortRef
+kotlin.jvm.internal.Ref
+kotlin.jvm.internal.Reflection:
+    static final java.lang.String REFLECTION_NOT_AVAILABLE
+    public void <init>()
+    public static kotlin.reflect.KClass createKotlinClass(java.lang.Class)
+    public static kotlin.reflect.KClass createKotlinClass(java.lang.Class,java.lang.String)
+    public static kotlin.reflect.KFunction function(kotlin.jvm.internal.FunctionReference)
+    public static kotlin.reflect.KClass getOrCreateKotlinClass(java.lang.Class)
+    public static kotlin.reflect.KClass getOrCreateKotlinClass(java.lang.Class,java.lang.String)
+    public static kotlin.reflect.KClass[] getOrCreateKotlinClasses(java.lang.Class[])
+    public static kotlin.reflect.KDeclarationContainer getOrCreateKotlinPackage(java.lang.Class)
+    public static kotlin.reflect.KDeclarationContainer getOrCreateKotlinPackage(java.lang.Class,java.lang.String)
+    public static kotlin.reflect.KType mutableCollectionType(kotlin.reflect.KType)
+    public static kotlin.reflect.KMutableProperty0 mutableProperty0(kotlin.jvm.internal.MutablePropertyReference0)
+    public static kotlin.reflect.KMutableProperty1 mutableProperty1(kotlin.jvm.internal.MutablePropertyReference1)
+    public static kotlin.reflect.KMutableProperty2 mutableProperty2(kotlin.jvm.internal.MutablePropertyReference2)
+    public static kotlin.reflect.KType nothingType(kotlin.reflect.KType)
+    public static kotlin.reflect.KType nullableTypeOf(java.lang.Class)
+    public static kotlin.reflect.KType nullableTypeOf(java.lang.Class,kotlin.reflect.KTypeProjection)
+    public static kotlin.reflect.KType nullableTypeOf(java.lang.Class,kotlin.reflect.KTypeProjection,kotlin.reflect.KTypeProjection)
+    public static varargs kotlin.reflect.KType nullableTypeOf(java.lang.Class,kotlin.reflect.KTypeProjection[])
+    public static kotlin.reflect.KType nullableTypeOf(kotlin.reflect.KClassifier)
+    public static kotlin.reflect.KType platformType(kotlin.reflect.KType,kotlin.reflect.KType)
+    public static kotlin.reflect.KProperty0 property0(kotlin.jvm.internal.PropertyReference0)
+    public static kotlin.reflect.KProperty1 property1(kotlin.jvm.internal.PropertyReference1)
+    public static kotlin.reflect.KProperty2 property2(kotlin.jvm.internal.PropertyReference2)
+    public static java.lang.String renderLambdaToString(kotlin.jvm.internal.FunctionBase)
+    public static void setUpperBounds(kotlin.reflect.KTypeParameter,kotlin.reflect.KType)
+    public static varargs void setUpperBounds(kotlin.reflect.KTypeParameter,kotlin.reflect.KType[])
+    public static kotlin.reflect.KType typeOf(java.lang.Class)
+    public static kotlin.reflect.KType typeOf(java.lang.Class,kotlin.reflect.KTypeProjection)
+    public static kotlin.reflect.KType typeOf(java.lang.Class,kotlin.reflect.KTypeProjection,kotlin.reflect.KTypeProjection)
+    public static varargs kotlin.reflect.KType typeOf(java.lang.Class,kotlin.reflect.KTypeProjection[])
+    public static kotlin.reflect.KType typeOf(kotlin.reflect.KClassifier)
+    public static kotlin.reflect.KTypeParameter typeParameter(java.lang.Object,java.lang.String,kotlin.reflect.KVariance,boolean)
+kotlin.jvm.internal.ReflectionFactory:
+    private static final java.lang.String KOTLIN_JVM_FUNCTIONS
+    public kotlin.reflect.KClass createKotlinClass(java.lang.Class)
+    public kotlin.reflect.KClass createKotlinClass(java.lang.Class,java.lang.String)
+    public kotlin.reflect.KFunction function(kotlin.jvm.internal.FunctionReference)
+    public kotlin.reflect.KClass getOrCreateKotlinClass(java.lang.Class)
+    public kotlin.reflect.KClass getOrCreateKotlinClass(java.lang.Class,java.lang.String)
+    public kotlin.reflect.KDeclarationContainer getOrCreateKotlinPackage(java.lang.Class,java.lang.String)
+    public kotlin.reflect.KType mutableCollectionType(kotlin.reflect.KType)
+    public kotlin.reflect.KMutableProperty0 mutableProperty0(kotlin.jvm.internal.MutablePropertyReference0)
+    public kotlin.reflect.KMutableProperty1 mutableProperty1(kotlin.jvm.internal.MutablePropertyReference1)
+    public kotlin.reflect.KMutableProperty2 mutableProperty2(kotlin.jvm.internal.MutablePropertyReference2)
+    public kotlin.reflect.KType nothingType(kotlin.reflect.KType)
+    public kotlin.reflect.KType platformType(kotlin.reflect.KType,kotlin.reflect.KType)
+    public kotlin.reflect.KProperty0 property0(kotlin.jvm.internal.PropertyReference0)
+    public kotlin.reflect.KProperty1 property1(kotlin.jvm.internal.PropertyReference1)
+    public kotlin.reflect.KProperty2 property2(kotlin.jvm.internal.PropertyReference2)
+    public void setUpperBounds(kotlin.reflect.KTypeParameter,java.util.List)
+    public kotlin.reflect.KType typeOf(kotlin.reflect.KClassifier,java.util.List,boolean)
+    public kotlin.reflect.KTypeParameter typeParameter(java.lang.Object,java.lang.String,kotlin.reflect.KVariance,boolean)
+kotlin.jvm.internal.RepeatableContainer
+kotlin.jvm.internal.ShortCompanionObject
+kotlin.jvm.internal.ShortSpreadBuilder
+kotlin.jvm.internal.SpreadBuilder
+kotlin.jvm.internal.StringCompanionObject
+kotlin.jvm.internal.TypeIntrinsics
+kotlin.jvm.internal.TypeParameterReference$Companion$WhenMappings
+kotlin.jvm.internal.TypeParameterReference$Companion
+kotlin.jvm.internal.TypeParameterReference
+kotlin.jvm.internal.TypeReference$Companion
+kotlin.jvm.internal.TypeReference$WhenMappings
+kotlin.jvm.internal.TypeReference$asString$args$1
+kotlin.jvm.internal.TypeReference
+kotlin.jvm.internal.markers.KMappedMarker
+kotlin.jvm.internal.markers.KMutableCollection
+kotlin.jvm.internal.markers.KMutableIterable
+kotlin.jvm.internal.markers.KMutableIterator
+kotlin.jvm.internal.markers.KMutableList
+kotlin.jvm.internal.markers.KMutableListIterator
+kotlin.jvm.internal.markers.KMutableMap$Entry
+kotlin.jvm.internal.markers.KMutableMap
+kotlin.jvm.internal.markers.KMutableSet
+kotlin.jvm.internal.unsafe.MonitorKt
+kotlin.jvm.jdk8.JvmRepeatableKt
+kotlin.math.Constants
+kotlin.math.MathKt
+kotlin.math.MathKt__MathHKt
+kotlin.math.MathKt__MathJVMKt
+kotlin.math.UMathKt
+kotlin.properties.Delegates$observable$1
+kotlin.properties.Delegates$vetoable$1
+kotlin.properties.Delegates
+kotlin.properties.NotNullVar
+kotlin.properties.ObservableProperty
+kotlin.properties.PropertyDelegateProvider
+kotlin.properties.ReadOnlyProperty
+kotlin.properties.ReadWriteProperty
+kotlin.random.AbstractPlatformRandom
+kotlin.random.FallbackThreadLocalRandom$implStorage$1
+kotlin.random.FallbackThreadLocalRandom
+kotlin.random.KotlinRandom$Companion
+kotlin.random.KotlinRandom
+kotlin.random.PlatformRandom$Companion
+kotlin.random.PlatformRandom
+kotlin.random.PlatformRandomKt
+kotlin.random.Random$Default$Serialized
+kotlin.random.Random$Default
+kotlin.random.Random
+kotlin.random.RandomKt
+kotlin.random.URandomKt
+kotlin.random.XorWowRandom$Companion
+kotlin.random.XorWowRandom
+kotlin.random.jdk8.PlatformThreadLocalRandom
+kotlin.ranges.CharProgression$Companion
+kotlin.ranges.CharProgression
+kotlin.ranges.CharProgressionIterator
+kotlin.ranges.CharRange$Companion
+kotlin.ranges.CharRange
+kotlin.ranges.ClosedDoubleRange
+kotlin.ranges.ClosedFloatRange
+kotlin.ranges.ClosedFloatingPointRange$DefaultImpls
+kotlin.ranges.ClosedFloatingPointRange
+kotlin.ranges.ClosedRange$DefaultImpls
+kotlin.ranges.ClosedRange
+kotlin.ranges.ComparableRange
+kotlin.ranges.IntProgression$Companion
+kotlin.ranges.IntProgression
+kotlin.ranges.IntProgressionIterator
+kotlin.ranges.IntRange$Companion
+kotlin.ranges.IntRange
+kotlin.ranges.LongProgression$Companion
+kotlin.ranges.LongProgression
+kotlin.ranges.LongProgressionIterator
+kotlin.ranges.LongRange$Companion
+kotlin.ranges.LongRange
+kotlin.ranges.RangesKt
+kotlin.ranges.RangesKt__RangesKt
+kotlin.ranges.RangesKt___RangesKt
+kotlin.ranges.UIntProgression$Companion
+kotlin.ranges.UIntProgression
+kotlin.ranges.UIntProgressionIterator
+kotlin.ranges.UIntRange$Companion
+kotlin.ranges.UIntRange
+kotlin.ranges.ULongProgression$Companion
+kotlin.ranges.ULongProgression
+kotlin.ranges.ULongProgressionIterator
+kotlin.ranges.ULongRange$Companion
+kotlin.ranges.ULongRange
+kotlin.ranges.URangesKt
+kotlin.ranges.URangesKt___URangesKt
+kotlin.reflect.GenericArrayTypeImpl
+kotlin.reflect.KAnnotatedElement
+kotlin.reflect.KCallable$DefaultImpls
+kotlin.reflect.KCallable
+kotlin.reflect.KClass$DefaultImpls
+kotlin.reflect.KClass:
+    public abstract boolean equals(java.lang.Object)
+    public abstract java.util.Collection getConstructors()
+    public abstract java.util.Collection getMembers()
+    public abstract java.util.Collection getNestedClasses()
+    public abstract java.lang.Object getObjectInstance()
+    public abstract java.lang.String getQualifiedName()
+    public abstract java.util.List getSealedSubclasses()
+    public abstract java.lang.String getSimpleName()
+    public abstract java.util.List getSupertypes()
+    public abstract java.util.List getTypeParameters()
+    public abstract kotlin.reflect.KVisibility getVisibility()
+    public abstract int hashCode()
+    public abstract boolean isAbstract()
+    public abstract boolean isCompanion()
+    public abstract boolean isData()
+    public abstract boolean isFinal()
+    public abstract boolean isFun()
+    public abstract boolean isInner()
+    public abstract boolean isInstance(java.lang.Object)
+    public abstract boolean isOpen()
+    public abstract boolean isSealed()
+    public abstract boolean isValue()
+kotlin.reflect.KClasses
+kotlin.reflect.KClassesImplKt
+kotlin.reflect.KClassifier
+kotlin.reflect.KDeclarationContainer
+kotlin.reflect.KFunction$DefaultImpls
+kotlin.reflect.KFunction
+kotlin.reflect.KMutableProperty$Setter
+kotlin.reflect.KMutableProperty0$Setter
+kotlin.reflect.KMutableProperty0
+kotlin.reflect.KMutableProperty1$Setter
+kotlin.reflect.KMutableProperty1
+kotlin.reflect.KMutableProperty2$Setter
+kotlin.reflect.KMutableProperty2
+kotlin.reflect.KMutableProperty
+kotlin.reflect.KParameter$DefaultImpls
+kotlin.reflect.KParameter$Kind
+kotlin.reflect.KParameter
+kotlin.reflect.KProperty$Accessor
+kotlin.reflect.KProperty$DefaultImpls
+kotlin.reflect.KProperty$Getter
+kotlin.reflect.KProperty0$Getter
+kotlin.reflect.KProperty0
+kotlin.reflect.KProperty1$Getter
+kotlin.reflect.KProperty1
+kotlin.reflect.KProperty2$Getter
+kotlin.reflect.KProperty2
+kotlin.reflect.KProperty
+kotlin.reflect.KType$DefaultImpls
+kotlin.reflect.KType
+kotlin.reflect.KTypeParameter
+kotlin.reflect.KTypeProjection$Companion
+kotlin.reflect.KTypeProjection$WhenMappings
+kotlin.reflect.KTypeProjection
+kotlin.reflect.KVariance
+kotlin.reflect.KVisibility
+kotlin.reflect.ParameterizedTypeImpl$getTypeName$1$1
+kotlin.reflect.ParameterizedTypeImpl
+kotlin.reflect.TypeImpl
+kotlin.reflect.TypeOfKt
+kotlin.reflect.TypeVariableImpl
+kotlin.reflect.TypesJVMKt$WhenMappings
+kotlin.reflect.TypesJVMKt$typeToString$unwrap$1
+kotlin.reflect.TypesJVMKt
+kotlin.reflect.WildcardTypeImpl$Companion
+kotlin.reflect.WildcardTypeImpl
+kotlin.sequences.ConstrainedOnceSequence
+kotlin.sequences.DistinctIterator
+kotlin.sequences.DistinctSequence
+kotlin.sequences.DropSequence$iterator$1
+kotlin.sequences.DropSequence
+kotlin.sequences.DropTakeSequence
+kotlin.sequences.DropWhileSequence$iterator$1
+kotlin.sequences.DropWhileSequence
+kotlin.sequences.EmptySequence
+kotlin.sequences.FilteringSequence$iterator$1
+kotlin.sequences.FilteringSequence
+kotlin.sequences.FlatteningSequence$iterator$1
+kotlin.sequences.FlatteningSequence
+kotlin.sequences.GeneratorSequence$iterator$1
+kotlin.sequences.GeneratorSequence
+kotlin.sequences.IndexingSequence$iterator$1
+kotlin.sequences.IndexingSequence
+kotlin.sequences.MergingSequence$iterator$1
+kotlin.sequences.MergingSequence
+kotlin.sequences.Sequence
+kotlin.sequences.SequenceBuilderIterator
+kotlin.sequences.SequenceScope
+kotlin.sequences.SequencesKt
+kotlin.sequences.SequencesKt__SequenceBuilderKt$buildSequence$$inlined$Sequence$1
+kotlin.sequences.SequencesKt__SequenceBuilderKt$sequence$$inlined$Sequence$1
+kotlin.sequences.SequencesKt__SequenceBuilderKt
+kotlin.sequences.SequencesKt__SequencesJVMKt
+kotlin.sequences.SequencesKt__SequencesKt$Sequence$1
+kotlin.sequences.SequencesKt__SequencesKt$asSequence$$inlined$Sequence$1
+kotlin.sequences.SequencesKt__SequencesKt$flatMapIndexed$1
+kotlin.sequences.SequencesKt__SequencesKt$flatten$1
+kotlin.sequences.SequencesKt__SequencesKt$flatten$2
+kotlin.sequences.SequencesKt__SequencesKt$flatten$3
+kotlin.sequences.SequencesKt__SequencesKt$generateSequence$1
+kotlin.sequences.SequencesKt__SequencesKt$generateSequence$2
+kotlin.sequences.SequencesKt__SequencesKt$ifEmpty$1
+kotlin.sequences.SequencesKt__SequencesKt$shuffled$1
+kotlin.sequences.SequencesKt__SequencesKt
+kotlin.sequences.SequencesKt___SequencesJvmKt$filterIsInstance$1
+kotlin.sequences.SequencesKt___SequencesJvmKt
+kotlin.sequences.SequencesKt___SequencesKt$asIterable$$inlined$Iterable$1
+kotlin.sequences.SequencesKt___SequencesKt$distinct$1
+kotlin.sequences.SequencesKt___SequencesKt$elementAt$1
+kotlin.sequences.SequencesKt___SequencesKt$filterIndexed$1
+kotlin.sequences.SequencesKt___SequencesKt$filterIndexed$2
+kotlin.sequences.SequencesKt___SequencesKt$filterIsInstance$1
+kotlin.sequences.SequencesKt___SequencesKt$filterNotNull$1
+kotlin.sequences.SequencesKt___SequencesKt$flatMap$1
+kotlin.sequences.SequencesKt___SequencesKt$flatMap$2
+kotlin.sequences.SequencesKt___SequencesKt$flatMapIndexed$1
+kotlin.sequences.SequencesKt___SequencesKt$flatMapIndexed$2
+kotlin.sequences.SequencesKt___SequencesKt$groupingBy$1
+kotlin.sequences.SequencesKt___SequencesKt$minus$1$iterator$1
+kotlin.sequences.SequencesKt___SequencesKt$minus$1
+kotlin.sequences.SequencesKt___SequencesKt$minus$2$iterator$1
+kotlin.sequences.SequencesKt___SequencesKt$minus$2
+kotlin.sequences.SequencesKt___SequencesKt$minus$3$iterator$1
+kotlin.sequences.SequencesKt___SequencesKt$minus$3
+kotlin.sequences.SequencesKt___SequencesKt$minus$4$iterator$1
+kotlin.sequences.SequencesKt___SequencesKt$minus$4
+kotlin.sequences.SequencesKt___SequencesKt$onEach$1
+kotlin.sequences.SequencesKt___SequencesKt$onEachIndexed$1
+kotlin.sequences.SequencesKt___SequencesKt$requireNoNulls$1
+kotlin.sequences.SequencesKt___SequencesKt$runningFold$1
+kotlin.sequences.SequencesKt___SequencesKt$runningFoldIndexed$1
+kotlin.sequences.SequencesKt___SequencesKt$runningReduce$1
+kotlin.sequences.SequencesKt___SequencesKt$runningReduceIndexed$1
+kotlin.sequences.SequencesKt___SequencesKt$sorted$1
+kotlin.sequences.SequencesKt___SequencesKt$sortedWith$1
+kotlin.sequences.SequencesKt___SequencesKt$zip$1
+kotlin.sequences.SequencesKt___SequencesKt$zipWithNext$1
+kotlin.sequences.SequencesKt___SequencesKt$zipWithNext$2
+kotlin.sequences.SequencesKt___SequencesKt
+kotlin.sequences.SubSequence$iterator$1
+kotlin.sequences.SubSequence
+kotlin.sequences.TakeSequence$iterator$1
+kotlin.sequences.TakeSequence
+kotlin.sequences.TakeWhileSequence$iterator$1
+kotlin.sequences.TakeWhileSequence
+kotlin.sequences.TransformingIndexedSequence$iterator$1
+kotlin.sequences.TransformingIndexedSequence
+kotlin.sequences.TransformingSequence$iterator$1
+kotlin.sequences.TransformingSequence
+kotlin.sequences.USequencesKt
+kotlin.sequences.USequencesKt___USequencesKt
+kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$1
+kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$2
+kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$3
+kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$4
+kotlin.streams.jdk8.StreamsKt
+kotlin.system.ProcessKt
+kotlin.system.TimingKt
+kotlin.text.CharCategory$Companion
+kotlin.text.CharCategory
+kotlin.text.CharDirectionality$Companion$directionalityMap$2
+kotlin.text.CharDirectionality$Companion
+kotlin.text.CharDirectionality
+kotlin.text.CharsKt
+kotlin.text.CharsKt__CharJVMKt
+kotlin.text.CharsKt__CharKt
+kotlin.text.Charsets
+kotlin.text.CharsetsKt
+kotlin.text.DelimitedRangesSequence$iterator$1
+kotlin.text.DelimitedRangesSequence
+kotlin.text.FlagEnum
+kotlin.text.MatchGroup
+kotlin.text.MatchGroupCollection
+kotlin.text.MatchNamedGroupCollection
+kotlin.text.MatchResult$DefaultImpls
+kotlin.text.MatchResult$Destructured
+kotlin.text.MatchResult
+kotlin.text.MatcherMatchResult$groupValues$1
+kotlin.text.MatcherMatchResult$groups$1$iterator$1
+kotlin.text.MatcherMatchResult$groups$1
+kotlin.text.MatcherMatchResult
+kotlin.text.Regex$Companion
+kotlin.text.Regex$Serialized$Companion
+kotlin.text.Regex$Serialized
+kotlin.text.Regex$findAll$1
+kotlin.text.Regex$findAll$2
+kotlin.text.Regex$special$$inlined$fromInt$1
+kotlin.text.Regex$splitToSequence$1
+kotlin.text.Regex
+kotlin.text.RegexKt$fromInt$1$1
+kotlin.text.RegexKt
+kotlin.text.RegexOption
+kotlin.text.ScreenFloatValueRegEx
+kotlin.text.StringsKt
+kotlin.text.StringsKt__AppendableKt
+kotlin.text.StringsKt__IndentKt$getIndentFunction$1
+kotlin.text.StringsKt__IndentKt$getIndentFunction$2
+kotlin.text.StringsKt__IndentKt$prependIndent$1
+kotlin.text.StringsKt__IndentKt
+kotlin.text.StringsKt__RegexExtensionsJVMKt
+kotlin.text.StringsKt__RegexExtensionsKt
+kotlin.text.StringsKt__StringBuilderJVMKt
+kotlin.text.StringsKt__StringBuilderKt
+kotlin.text.StringsKt__StringNumberConversionsJVMKt
+kotlin.text.StringsKt__StringNumberConversionsKt
+kotlin.text.StringsKt__StringsJVMKt
+kotlin.text.StringsKt__StringsKt$iterator$1
+kotlin.text.StringsKt__StringsKt$rangesDelimitedBy$1
+kotlin.text.StringsKt__StringsKt$rangesDelimitedBy$2
+kotlin.text.StringsKt__StringsKt$splitToSequence$1
+kotlin.text.StringsKt__StringsKt$splitToSequence$2
+kotlin.text.StringsKt__StringsKt
+kotlin.text.StringsKt___StringsJvmKt
+kotlin.text.StringsKt___StringsKt$asIterable$$inlined$Iterable$1
+kotlin.text.StringsKt___StringsKt$asSequence$$inlined$Sequence$1
+kotlin.text.StringsKt___StringsKt$chunkedSequence$1
+kotlin.text.StringsKt___StringsKt$groupingBy$1
+kotlin.text.StringsKt___StringsKt$windowed$1
+kotlin.text.StringsKt___StringsKt$windowedSequence$1
+kotlin.text.StringsKt___StringsKt$windowedSequence$2
+kotlin.text.StringsKt___StringsKt$withIndex$1
+kotlin.text.StringsKt___StringsKt
+kotlin.text.SystemProperties
+kotlin.text.TypeAliasesKt
+kotlin.text.Typography
+kotlin.text.UStringsKt
+kotlin.text._OneToManyTitlecaseMappingsKt
+kotlin.text.jdk8.RegexExtensionsJDK8Kt
+kotlin.time.AbstractDoubleTimeSource$DoubleTimeMark
+kotlin.time.AbstractDoubleTimeSource
+kotlin.time.AbstractLongTimeSource$LongTimeMark
+kotlin.time.AbstractLongTimeSource
+kotlin.time.AdjustedTimeMark
+kotlin.time.Duration$Companion
+kotlin.time.Duration
+kotlin.time.DurationJvmKt
+kotlin.time.DurationKt
+kotlin.time.DurationUnit
+kotlin.time.DurationUnitKt
+kotlin.time.DurationUnitKt__DurationUnitJvmKt$WhenMappings
+kotlin.time.DurationUnitKt__DurationUnitJvmKt
+kotlin.time.DurationUnitKt__DurationUnitKt$WhenMappings
+kotlin.time.DurationUnitKt__DurationUnitKt
+kotlin.time.ExperimentalTime
+kotlin.time.MeasureTimeKt
+kotlin.time.MonotonicTimeSource
+kotlin.time.TestTimeSource
+kotlin.time.TimeMark
+kotlin.time.TimeSource$Companion
+kotlin.time.TimeSource$Monotonic
+kotlin.time.TimeSource
+kotlin.time.TimeSourceKt
+kotlin.time.TimedValue
+kotlin.time.jdk8.DurationConversionsJDK8Kt
+org.intellij.lang.annotations.Flow
+org.intellij.lang.annotations.Identifier
+org.intellij.lang.annotations.JdkConstants$AdjustableOrientation
+org.intellij.lang.annotations.JdkConstants$BoxLayoutAxis
+org.intellij.lang.annotations.JdkConstants$CalendarMonth
+org.intellij.lang.annotations.JdkConstants$CursorType
+org.intellij.lang.annotations.JdkConstants$FlowLayoutAlignment
+org.intellij.lang.annotations.JdkConstants$FontStyle
+org.intellij.lang.annotations.JdkConstants$HorizontalAlignment
+org.intellij.lang.annotations.JdkConstants$InputEventMask
+org.intellij.lang.annotations.JdkConstants$ListSelectionMode
+org.intellij.lang.annotations.JdkConstants$PatternFlags
+org.intellij.lang.annotations.JdkConstants$TabLayoutPolicy
+org.intellij.lang.annotations.JdkConstants$TabPlacement
+org.intellij.lang.annotations.JdkConstants$TitledBorderJustification
+org.intellij.lang.annotations.JdkConstants$TitledBorderTitlePosition
+org.intellij.lang.annotations.JdkConstants$TreeSelectionMode
+org.intellij.lang.annotations.JdkConstants
+org.intellij.lang.annotations.Language
+org.intellij.lang.annotations.MagicConstant
+org.intellij.lang.annotations.Pattern
+org.intellij.lang.annotations.PrintFormat
+org.intellij.lang.annotations.PrintFormatPattern
+org.intellij.lang.annotations.RegExp
+org.intellij.lang.annotations.Subst
+org.jetbrains.annotations.Contract
+org.jetbrains.annotations.Nls
+org.jetbrains.annotations.NonNls
+org.jetbrains.annotations.NotNull
+org.jetbrains.annotations.Nullable
+org.jetbrains.annotations.PropertyKey
+org.jetbrains.annotations.TestOnly
+androidx.arch.core.executor.ArchTaskExecutor:
+    public static final java.util.concurrent.Executor sMainThreadExecutor
+androidx.arch.core.executor.DefaultTaskExecutor$1:
+    public final synthetic androidx.arch.core.executor.DefaultTaskExecutor this$0
+androidx.arch.core.internal.SafeIterableMap$SupportRemove:
+    public abstract void supportRemove(androidx.arch.core.internal.SafeIterableMap$Entry)
+androidx.arch.core.util.Function
+androidx.room.AutoCloser$1
+androidx.room.AutoCloser$2
+androidx.room.AutoCloser:
+    public final long mAutoCloseTimeoutInMs
+    public final java.lang.Runnable mAutoCloser
+    public androidx.sqlite.db.SupportSQLiteDatabase mDelegateDatabase
+    public androidx.sqlite.db.SupportSQLiteOpenHelper mDelegateOpenHelper
+    public final java.lang.Runnable mExecuteAutoCloser
+    public final java.util.concurrent.Executor mExecutor
+    public final android.os.Handler mHandler
+    public long mLastDecrementRefCountTimeStamp
+    public final java.lang.Object mLock
+    public boolean mManuallyClosed
+    public java.lang.Runnable mOnAutoCloseCallback
+    public int mRefCount
+    public void <init>(long,java.util.concurrent.TimeUnit,java.util.concurrent.Executor)
+    public void closeDatabaseIfOpen()
+    public void decrementCountAndScheduleClose()
+    public java.lang.Object executeRefCountingFunction(androidx.arch.core.util.Function)
+    public androidx.sqlite.db.SupportSQLiteDatabase getDelegateDatabase()
+    public androidx.sqlite.db.SupportSQLiteDatabase incrementCountAndEnsureDbIsOpen()
+    public void init(androidx.sqlite.db.SupportSQLiteOpenHelper)
+androidx.room.AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$$InternalSyntheticLambda$0$03c4c882cf11b81cf2c9b13bd16ac8e79e3871c294c37260d08307d9aa7d59f0$0
+androidx.room.AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$$InternalSyntheticLambda$0$5a2eb97a3059949373295ce4f42c1bbb89035da59b01d4f8ae1d0a0ba2f38c9f$0
+androidx.room.AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$$InternalSyntheticLambda$0$70e25f293017b7dae0054048cebf8e46d3af6d43883e89e3a08b24b98ba9b217$0
+androidx.room.AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$$InternalSyntheticLambda$0$a7aeff940d44feb3c7842d6dafe160446b34f367d311bc45f5a76c140096d49e$0
+androidx.room.AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$$InternalSyntheticLambda$0$c31d02b6fa73115a1997ae368efe882566afb4ef52214333dd987179cd758b43$0
+androidx.room.AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$$InternalSyntheticLambda$0$d65adf64daaa267b0a4f58c8d3c3a2b9bb6fc1ec231a1b81ee2c3471a0a1251a$0
+androidx.room.AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$$InternalSyntheticLambda$0$fce62bcfb672b4d48c9b1df3262deaf33f9bca8117c0d39d2ba185f00fce62c9$0
+androidx.room.AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase
+androidx.room.AutoClosingRoomOpenHelper$AutoClosingSupportSqliteStatement$$InternalSyntheticLambda$0$534f5b107d27902f077def9fa42d048b55e80215171a5e6456d9060dee76a3b3$0
+androidx.room.AutoClosingRoomOpenHelper$AutoClosingSupportSqliteStatement$$InternalSyntheticLambda$0$efce483dbdb0a6cc7896b076f4cc047237a6c2e413d8115e59f32765fa24f71a$0
+androidx.room.AutoClosingRoomOpenHelper$AutoClosingSupportSqliteStatement$$InternalSyntheticLambda$1$f1c8b9f5cf234073c06c75539345b55320cda6c207135dd9a4d39533ec353068$0
+androidx.room.AutoClosingRoomOpenHelper$AutoClosingSupportSqliteStatement
+androidx.room.AutoClosingRoomOpenHelper$KeepAliveCursor
+androidx.room.AutoClosingRoomOpenHelper:
+    public final androidx.room.AutoCloser mAutoCloser
+    public final androidx.room.AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase mAutoClosingDb
+    public final androidx.sqlite.db.SupportSQLiteOpenHelper mDelegateOpenHelper
+    public void <init>(androidx.sqlite.db.SupportSQLiteOpenHelper,androidx.room.AutoCloser)
+    public void close()
+    public java.lang.String getDatabaseName()
+    public androidx.sqlite.db.SupportSQLiteOpenHelper getDelegate()
+    public androidx.sqlite.db.SupportSQLiteDatabase getReadableDatabase()
+    public androidx.sqlite.db.SupportSQLiteDatabase getWritableDatabase()
+    public void setWriteAheadLoggingEnabled(boolean)
+androidx.room.AutoClosingRoomOpenHelperFactory
+androidx.room.DatabaseConfiguration:
+    public final java.lang.String copyFromAssetPath
+    public final java.io.File copyFromFile
+    public final java.util.concurrent.Callable copyFromInputStream
+    public final androidx.room.RoomDatabase$PrepackagedDatabaseCallback prepackagedDatabaseCallback
+androidx.room.IMultiInstanceInvalidationCallback$Stub$Proxy:
+    public static androidx.room.IMultiInstanceInvalidationCallback sDefaultImpl
+androidx.room.IMultiInstanceInvalidationService$Stub$Proxy:
+    public static androidx.room.IMultiInstanceInvalidationService sDefaultImpl
+androidx.room.IMultiInstanceInvalidationService:
+    public abstract void unregisterCallback(androidx.room.IMultiInstanceInvalidationCallback,int)
+androidx.room.InvalidationLiveDataContainer:
+    public final androidx.room.RoomDatabase mDatabase
+    public final java.util.Set mLiveDataSet
+androidx.room.InvalidationTracker$ObserverWrapper:
+    public void notifyByTableNames(java.lang.String[])
+androidx.room.InvalidationTracker:
+    public final androidx.room.InvalidationLiveDataContainer mInvalidationLiveDataContainer
+    public androidx.room.MultiInstanceInvalidationClient mMultiInstanceInvalidationClient
+androidx.room.QueryInterceptorDatabase$$InternalSyntheticLambda$0$1900628d602f86ce69a3eea35683e5013c417085ea6529403c9641914093998a$0
+androidx.room.QueryInterceptorDatabase$$InternalSyntheticLambda$0$1bcdd037f5e4885de991c91c66fe14f8bb8c532a455b91f867122caa4959acb5$0
+androidx.room.QueryInterceptorDatabase$$InternalSyntheticLambda$0$840805b1e5be612ea99963715c4993cdc13ff607a9ef060dccee0ed89520674f$0
+androidx.room.QueryInterceptorDatabase$$InternalSyntheticLambda$0$85f7b0b96741a667a52972e7efd273be6767278122378fbc929e6702d78486b0$0
+androidx.room.QueryInterceptorDatabase$$InternalSyntheticLambda$0$9425620339d5d757f34a17c8174fab1a30b5d96472d3b17935abade4529be7c3$0
+androidx.room.QueryInterceptorDatabase$$InternalSyntheticLambda$0$c02322fe547e6b6f3e3f374d7385d7da605e6e62a3c9ae8b80d33384ffeca0a8$0
+androidx.room.QueryInterceptorDatabase$$InternalSyntheticLambda$0$db6aa981b1d5d3db8a927e4e6d99985d7163706ae5c7c0024e27732667e608db$0
+androidx.room.QueryInterceptorDatabase$$InternalSyntheticLambda$0$eb0dd0a566f62bff27bab94f977e8dcb21a0270bfbf76560edf08827d888c33a$0
+androidx.room.QueryInterceptorDatabase
+androidx.room.QueryInterceptorOpenHelper
+androidx.room.QueryInterceptorOpenHelperFactory
+androidx.room.QueryInterceptorProgram
+androidx.room.QueryInterceptorStatement$$InternalSyntheticLambda$0$09e454b6c6022b7b0cd92c44262531f629e13a640b1628c407904de07b877a86$0
+androidx.room.QueryInterceptorStatement$$InternalSyntheticLambda$0$d33a3c429c9cc6135bebb1b1f60eecd6c7c6d693973b30fbefc14956b78d78fa$0
+androidx.room.QueryInterceptorStatement
+androidx.room.RoomDatabase$$InternalSyntheticLambda$0$231bba65d412989b7eb8668938d6d973f01a707939385ab521f1fe46c843cde0$0
+androidx.room.RoomDatabase$$InternalSyntheticLambda$0$c127180caea1b164250449b5833d687e2d16d2d24866aae23d9b9b27246ead23$0
+androidx.room.RoomDatabase$Builder:
+    public boolean mAllowDestructiveMigrationOnDowngrade
+    public boolean mAllowMainThreadQueries
+    public java.util.concurrent.TimeUnit mAutoCloseTimeUnit
+    public java.util.List mAutoMigrationSpecs
+    public java.util.ArrayList mCallbacks
+    public java.lang.String mCopyFromAssetPath
+    public java.io.File mCopyFromFile
+    public java.util.concurrent.Callable mCopyFromInputStream
+    public androidx.sqlite.db.SupportSQLiteOpenHelper$Factory mFactory
+    public java.util.Set mMigrationStartAndEndVersions
+    public java.util.Set mMigrationsNotRequiredFrom
+    public android.content.Intent mMultiInstanceInvalidationIntent
+    public androidx.room.RoomDatabase$PrepackagedDatabaseCallback mPrepackagedDatabaseCallback
+    public androidx.room.RoomDatabase$QueryCallback mQueryCallback
+    public java.util.concurrent.Executor mQueryCallbackExecutor
+    public java.util.List mTypeConverters
+androidx.room.RoomDatabase$PrepackagedDatabaseCallback
+androidx.room.RoomDatabase$QueryCallback
+androidx.room.RoomDatabase:
+    public final java.util.Map mBackingFieldMap
+    public java.util.concurrent.Executor mTransactionExecutor
+    public boolean mWriteAheadLoggingEnabled
+    public static synthetic java.lang.Object $r8$lambda$GuFQL6oa4rRatJAY4ELbKosygs8(androidx.room.RoomDatabase,androidx.sqlite.db.SupportSQLiteDatabase)
+    public static synthetic java.lang.Object $r8$lambda$lM9aNaGxIIMhUsr4XoMGXDUymWg(androidx.room.RoomDatabase,androidx.sqlite.db.SupportSQLiteDatabase)
+    private synthetic java.lang.Object lambda$beginTransaction$0()
+    private synthetic java.lang.Object lambda$endTransaction$1()
+androidx.room.SQLiteCopyOpenHelper$1
+androidx.room.SQLiteCopyOpenHelper:
+    public final android.content.Context mContext
+    public final java.lang.String mCopyFromAssetPath
+    public final java.io.File mCopyFromFile
+    public final java.util.concurrent.Callable mCopyFromInputStream
+    public androidx.room.DatabaseConfiguration mDatabaseConfiguration
+    public final int mDatabaseVersion
+    public final androidx.sqlite.db.SupportSQLiteOpenHelper mDelegate
+    public boolean mVerified
+    public void <init>(android.content.Context,java.lang.String,java.io.File,java.util.concurrent.Callable,int,androidx.sqlite.db.SupportSQLiteOpenHelper)
+    public synchronized void close()
+    public final void copyDatabaseFile(java.io.File,boolean)
+    public final androidx.sqlite.db.SupportSQLiteOpenHelper createFrameworkOpenHelper(java.io.File)
+    public final void dispatchOnOpenPrepackagedDatabase(java.io.File,boolean)
+    public java.lang.String getDatabaseName()
+    public androidx.sqlite.db.SupportSQLiteOpenHelper getDelegate()
+    public synchronized androidx.sqlite.db.SupportSQLiteDatabase getReadableDatabase()
+    public synchronized androidx.sqlite.db.SupportSQLiteDatabase getWritableDatabase()
+    public void setWriteAheadLoggingEnabled(boolean)
+    public final void verifyDatabaseFile(boolean)
+androidx.room.SQLiteCopyOpenHelperFactory
+androidx.room.migration.Migration:
+    public final int endVersion
+    public final int startVersion
+androidx.room.util.CopyLock
+androidx.room.util.DBUtil:
+    public static int readVersion(java.io.File)
+androidx.room.util.FileUtil
+androidx.room.util.SneakyThrow
+androidx.room.util.TableInfo$Column:
+    public boolean isPrimaryKey()
+androidx.sqlite.db.SupportSQLiteCompat$Api19Impl:
+    public static android.net.Uri getNotificationUri(android.database.Cursor)
+androidx.sqlite.db.SupportSQLiteCompat$Api23Impl
+androidx.sqlite.db.SupportSQLiteCompat$Api29Impl
+androidx.sqlite.db.SupportSQLiteDatabase:
+    public abstract void setVersion(int)
+androidx.sqlite.db.SupportSQLiteOpenHelper$Configuration$Builder:
+    public boolean mUseNoBackupDirectory
+androidx.sqlite.db.SupportSQLiteOpenHelper:
+    public abstract void close()
+    public abstract java.lang.String getDatabaseName()
+    public abstract androidx.sqlite.db.SupportSQLiteDatabase getReadableDatabase()
+androidx.sqlite.db.SupportSQLiteQuery:
+    public abstract void bindTo(androidx.sqlite.db.SupportSQLiteProgram)
+    public abstract java.lang.String getSql()
+androidx.sqlite.db.framework.FrameworkSQLiteDatabase$1:
+    public final synthetic androidx.sqlite.db.framework.FrameworkSQLiteDatabase this$0
+androidx.sqlite.db.framework.FrameworkSQLiteDatabase$2:
+    public final synthetic androidx.sqlite.db.framework.FrameworkSQLiteDatabase this$0
+androidx.sqlite.db.framework.FrameworkSQLiteDatabase:
+    public static final java.lang.String[] CONFLICT_VALUES
+    public void setVersion(int)
+androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper:
+    public synchronized androidx.sqlite.db.SupportSQLiteDatabase getReadableSupportDatabase()
+androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper:
+    public java.lang.String getDatabaseName()
+    public androidx.sqlite.db.SupportSQLiteDatabase getReadableDatabase()
+com.example.roomr8.TestInitializer$TestDao:
+    public abstract void save(java.util.List)
+com.example.roomr8.TestInitializerTestDao_Impl$1:
+    public final synthetic com.example.roomr8.TestInitializerTestDao_Impl this$0
+kotlin.collections.CollectionsKt
+kotlin.collections.CollectionsKt__CollectionsKt
+kotlin.collections.CollectionsKt__IterablesKt
+kotlin.collections.CollectionsKt__IteratorsJVMKt
+kotlin.collections.CollectionsKt__IteratorsKt
+kotlin.collections.CollectionsKt__MutableCollectionsJVMKt
+kotlin.collections.CollectionsKt__MutableCollectionsKt
+kotlin.collections.CollectionsKt__ReversedViewsKt
+kotlin.collections.CollectionsKt___CollectionsJvmKt
+kotlin.collections.CollectionsKt___CollectionsKt
+kotlin.jvm.functions.Function0:
+    public abstract java.lang.Object invoke()
+kotlin.jvm.internal.Lambda:
+    public final int arity
+kotlin.jvm.internal.Reflection:
+    public static final kotlin.reflect.KClass[] EMPTY_K_CLASS_ARRAY
+kotlin.reflect.KClass
