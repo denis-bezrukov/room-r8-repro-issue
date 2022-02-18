@@ -19,7 +19,6 @@ android {
 
     buildTypes {
         debug {
-            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         release {
@@ -33,6 +32,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    ksp {
+        arg("room.schemaLocation", "${project.projectDir}/schemas")
     }
 }
 

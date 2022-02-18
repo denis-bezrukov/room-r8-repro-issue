@@ -21,7 +21,12 @@ class TestInitializer(private val context: Context) {
     }
 
 
-    @Database(entities = [TestEntity::class], version = 1)
+    @Database(
+        entities = [TestEntity::class],
+        // views = [TestEntityView::class], // Uncomment this line
+        version = 1,
+        exportSchema = true,
+    )
     abstract class TestDatabase : RoomDatabase() {
         abstract val dao: TestDao
 
@@ -42,6 +47,11 @@ class TestInitializer(private val context: Context) {
         @Query("select * from test_entity order by id")
         fun loadEntities(): List<TestEntity>
     }
+
+    @DatabaseView("select id from test_entity")
+    data class TestEntityView(
+        val id: Int,
+    )
 
     @Entity(tableName = "test_entity")
     data class TestEntity(
